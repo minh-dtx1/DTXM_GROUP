@@ -1,0 +1,40 @@
+# File tam cua Microsoft Office (Word, Excel, PowerPoint)
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+*.tmp
+
+# File backup va khoa tam cua AutoCAD / Civil 3D / ADS Road
+*.bak
+*.dwl
+*.dwl2
+*.ac$
+*.sv$
+*.err
+plot.log
+hardcopy.log
+
+# File backup tu dong cua Revit / BIM (VD: TenFile.0001.rvt)
+*.[0-9][0-9][0-9][0-9].rvt
+*.[0-9][0-9][0-9][0-9].rfa
+*.[0-9][0-9][0-9][0-9].rte
+*_backup/
+
+# File ket qua / file tam dung luong lon cua Midas Civil / SAP2000 (chi luu file mo hinh goc .mcb, .mct, .sdb)
+*.ana
+*.blb
+*.bgl
+*.sol
+*.out
+*.d0*
+*.t0*
+
+# File he thong Windows / macOS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Moi truong ao Python (neu co)
+.venv/
+venv/
+__pycache__/
