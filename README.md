@@ -62,7 +62,13 @@ F:\OneDrive\DTXM_GROUP\
 │       │   ├── 05_TCTC/                        # Biện pháp TCTC tổng thể, Bình đồ & Bảng tọa độ cọc GPMB
 │       │   ├── 06_BangTinh/                    # File mô hình Midas Civil, GeoSlope, Bảng tính KCAD, Thủy lực
 │       │   └── 99_Xref/                        # Chứa các file bản vẽ gốc làm Xref dùng chung (Bình đồ, Khung tên...)
-│       ├── 07_HoSo_BIM/                        # Hồ sơ BIM (Kế hoạch BEP, Mô hình Civil 3D, Revit, InfraWorks, IFC, Navisworks)
+│       ├── 07_HoSo_BIM/                        # Hồ sơ Mô hình thông tin công trình (BIM)
+│       │   ├── 01_BEP_QuyTrinh_TieuChuanBIM/   # Kế hoạch thực hiện BIM (BEP), tiêu chuẩn & phân quyền CDE
+│       │   ├── 02_Civil3D_Tuyen_NenMatDuong/   # Mô hình Bề mặt, Tuyến, Corridor, Nút giao, Thoát nước, Data Shortcuts
+│       │   ├── 03_Revit_Cau_Cong_KetCau/       # Mô hình kết cấu Cầu, Cống hộp, Hầm chui, Tường chắn (.rvt) & Family (.rfa)
+│       │   ├── 04_InfraWorks_Lumion_PhoiCanh/  # Mô hình tổng thể phương án tuyến, diễn họa 3D
+│       │   ├── 05_Navisworks_PhoiHop_VaCham/   # Mô hình tổng hợp (.nwf, .nwd), Kiểm tra xung đột (Clash), Tiến độ 4D
+│       │   └── 06_XuatBan_IFC_BanGiaoCDT/      # File xuất chuẩn mở (.ifc) và hồ sơ mô hình đóng gói bàn giao CĐT
 │       ├── 08_KhoiLuong_DuToan_TMDT/           # Bóc tách khối lượng, Dự toán, Tổng mức đầu tư
 │       ├── 09_ThamTra_ThamDinh_GiaiTrinh/      # Ý kiến Thẩm tra/Thẩm định & Báo cáo giải trình
 │       └── 10_HoSo_HoanThien_BanGiaoCDT/       # File xuất in hoàn chỉnh (PDF, DWG, Bộ hồ sơ đóng dấu)
