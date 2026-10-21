@@ -1,9 +1,13 @@
-# BẢNG KIỂM TRA HIỆU LỰC VĂN BẢN PHÁP LUẬT, TIÊU CHUẨN QUỐC GIA (TCVN), TIÊU CHUẨN CƠ SỞ (TCCS) & ĐỊNH MỨC CẦU ĐƯỜNG (CẬP NHẬT THÁNG 10/2026)
+# BẢNG KIỂM TRA HIỆU LỰC VĂN BẢN PHÁP LUẬT, TIÊU CHUẨN QUỐC GIA (TCVN), QUY CHUẨN (QCVN), TIÊU CHUẨN CƠ SỞ (TCCS) & ĐỊNH MỨC CẦU ĐƯỜNG (CẬP NHẬT THÁNG 10/2026)
 
 > [!IMPORTANT]
-> **Nguyên tắc áp dụng Tiêu chuẩn & Văn bản pháp luật (Cập nhật 10/2026):**
-> 1. **Loại bỏ hoàn toàn Tiêu chuẩn ngành cũ (`22TCN`):** Toàn bộ các tiêu chuẩn ngành cũ (`22TCN 211-06`, `22TCN 272-05`, `22TCN 263-2000`, `22TCN 223-95`...) đã hết hiệu lực và được thay thế bằng hệ thống **Tiêu chuẩn Quốc gia (`TCVN`)** và **Tiêu chuẩn cơ sở (`TCCS .../TCĐBVN`)** của Cục Đường bộ Việt Nam. Bản `22TCN 211-06` đã được chuyển vào kho lưu trữ `99_VanBan_Cu_ChuyenTiep`.
-> 2. **Pháp lý Xây dựng mới từ 01/07/2026:** Áp dụng **Luật Xây dựng số 135/2025/QH15**, các Nghị định (`206`, `207`, `212`, `217/2026/NĐ-CP`) và Thông tư (`32`, `34`, `36`, `37`, `38/2026/TT-BXD`).
+> **Nguyên tắc phân loại & áp dụng (Cập nhật 10/2026):**
+> - **Mục `01`:** Hệ thống Luật, Nghị định, Thông tư mới nhất (Luật Xây dựng 135/2025/QH15, Nghị định 206, 207, 212, 217/2026/NĐ-CP...).
+> - **Mục `02`, `03`, `04`:** Chỉ chứa thuần túy các **Tiêu chuẩn Quốc gia (`TCVN`)** chia theo Đường bộ (`02`), Cầu cống (`03`) và Khảo sát - Thí nghiệm (`04`).
+> - **Mục `05` (`05_QCVN_QuyChuanKyThuatQuocGia`):** Tách riêng toàn bộ **Quy chuẩn kỹ thuật Quốc gia (`QCVN`)** bắt buộc áp dụng.
+> - **Mục `06` (`06_TCCS_TieuChuanCoSo_CDBVN`):** Tách riêng toàn bộ **23 Tiêu chuẩn cơ sở (`TCCS .../TCĐBVN`)** của Cục Đường bộ Việt Nam (thay thế hoàn toàn tiêu chuẩn ngành `22TCN` cũ).
+> - **Mục `07` (`07_DinhMuc_DonGia_CongBoGiaVL`):** Hệ thống Thông tư Định mức, Quản lý chi phí đầu tư xây dựng mới nhất (`TT 36, 37, 38/2026/TT-BXD`).
+> - **Mục `99` (`99_VanBan_Cu_ChuyenTiep`):** Lưu trữ văn bản, tiêu chuẩn cũ đã hết hiệu lực để tra cứu cho các dự án chuyển tiếp.
 
 ---
 
@@ -29,64 +33,82 @@
 
 ---
 
-## 02. TIÊU CHUẨN QUỐC GIA (TCVN) & TIÊU CHUẨN CƠ SỞ (TCCS) PHẦN ĐƯỜNG BỘ, NÚT GIAO & ATGT (`02_TCVN_DuongBo_NutGiao_ATGT`)
+## 02. TIÊU CHUẨN QUỐC GIA (TCVN) PHẦN ĐƯỜNG BỘ (`02_TCVN_DuongBo_NutGiao_ATGT`)
 
-| STT | Ký hiệu Tiêu chuẩn / Quy chuẩn | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng & Thay thế tiêu chuẩn ngành cũ |
+| STT | Ký hiệu Tiêu chuẩn Quốc gia | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng |
 | :--- | :--- | :--- | :--- |
 | 1 | **TCVN 4054:2005** | ✅ **Đang có hiệu lực** | Đường ô tô - Yêu cầu thiết kế (áp dụng cho đường ngoài đô thị) |
 | 2 | **TCVN 13592:2022** | ✅ **Đang có hiệu lực** | Đường đô thị - Yêu cầu thiết kế *(Thay thế TCXDVN 104:2007)* |
-| 3 | **TCVN 5729:2012** & **QCVN 115:2024/BGTVT** | ✅ **Đang có hiệu lực** | Thiết kế đường cao tốc & Quy chuẩn kỹ thuật quốc gia về đường bộ cao tốc |
-| 4 | **QCVN 41:2024/BGTVT** | ✅ **Đang có hiệu lực** (từ 01/01/2025) | Quy chuẩn báo hiệu đường bộ *(Thay thế QCVN 41:2019/BGTVT)* |
-| 5 | **QCVN 07:2023/BXD** | ✅ **Đang có hiệu lực** (từ 01/07/2024) | Quy chuẩn kỹ thuật quốc gia về Hệ thống công trình hạ tầng kỹ thuật |
-| 6 | **TCCS 38:2022/TCĐBVN** | ✅ **Đang có hiệu lực** (QĐ 2243/QĐ-TCĐBVN) | **Áo đường mềm – Các yêu cầu và chỉ dẫn thiết kế** *(Thay thế hoàn toàn 22TCN 211-06)* |
-| 7 | **TCCS 37:2022/TCĐBVN** *(+ Phụ lục)* | ✅ **Đang có hiệu lực** | **Áo đường mềm – Yêu cầu và chỉ dẫn thiết kế theo chỉ số kết cấu (SN)** *(Thay thế 22TCN 274-01)* |
-| 8 | **TCCS 39:2022/TCĐBVN** | ✅ **Đang có hiệu lực** | **Thiết kế mặt đường bê tông xi măng thông thường có khe nối** *(Thay thế 22TCN 223-95)* |
-| 9 | **TCCS 41:2022/TCĐBVN** | ✅ **Đang có hiệu lực** | **Tiêu chuẩn khảo sát, thiết kế nền đường ô tô đắp trên nền đất yếu** *(Thay thế 22TCN 262-2000)* |
-| 10 | **TCCS 42:2022/TCĐBVN** | ✅ **Đang có hiệu lực** | Đường ô tô cao tốc – Thiết kế và tổ chức giao thông trong giai đoạn phân kỳ đầu tư xây dựng |
-| 11 | **TCCS 29:2020/TCĐBVN** | ✅ **Đang có hiệu lực** | Nền đường đắp đá – Thiết kế, thi công và nghiệm thu |
-| 12 | **TCCS 24:2018/TCĐBVN** | ✅ **Đang có hiệu lực** | Tiêu chuẩn tổ chức thiết kế điều khiển giao thông bằng đèn tín hiệu |
-| 13 | **TCCS 20:2018/TCĐBVN** | ✅ **Đang có hiệu lực** | Hạng mục công trình an toàn phòng hộ trên đường cao tốc – Yêu cầu thiết kế và thi công |
-| 14 | **TCCS 34:2020/TCĐBVN** | ✅ **Đang có hiệu lực** | Gờ giảm tốc, gồ giảm tốc trên đường bộ – Yêu cầu thiết kế |
-| 15 | **TCCS 12:2016/TCĐBVN** | ✅ **Đang có hiệu lực** | Sửa chữa mặt đường bê tông xi măng thông thường có khe nối – Thi công và nghiệm thu |
-| 16 | **TCVN 9436:2012** | ✅ **Đang có hiệu lực** | Nền đường ô tô – Thi công và nghiệm thu |
-| 17 | **TCVN 8859:2023** & **TCVN 8858:2023** | ✅ **Đang có hiệu lực** | Lớp móng cấp phối đá dăm (CPĐD) và Móng CPĐD gia cố xi măng |
+| 3 | **TCVN 5729:2012** | ✅ **Đang có hiệu lực** | Đường ô tô cao tốc - Yêu cầu thiết kế (Áp dụng đồng thời với QCVN 115:2024/BGTVT) |
+| 4 | **TCVN 9436:2012** | ✅ **Đang có hiệu lực** | Nền đường ô tô - Thi công và nghiệm thu |
+| 5 | **TCVN 8859:2023** | ✅ **Đang có hiệu lực** | Lớp móng cấp phối đá dăm trong kết cấu áo đường *(Thay thế TCVN 8859:2011)* |
+| 6 | **TCVN 8858:2023** | ✅ **Đang có hiệu lực** | Móng CPĐD và cấp phối thiên nhiên gia cố xi măng *(Thay thế TCVN 8858:2011)* |
 
 ---
 
-## 03. TIÊU CHUẨN QUỐC GIA (TCVN) & TIÊU CHUẨN CƠ SỞ (TCCS) PHẦN CẦU, CỐNG, KÈ & TƯỜNG CHẮN (`03_TCVN_Cau_Cong_Ham`)
+## 03. TIÊU CHUẨN QUỐC GIA (TCVN) PHẦN CẦU, CỐNG & KẾT CẤU (`03_TCVN_Cau_Cong_Ham`)
 
-| STT | Ký hiệu Tiêu chuẩn | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng |
+| STT | Ký hiệu Tiêu chuẩn Quốc gia | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng |
 | :--- | :--- | :--- | :--- |
-| 1 | **TCVN 11823:2017 (Phần 1 ÷ Phần 14)** | ✅ **Đang có hiệu lực** | Bộ tiêu chuẩn Thiết kế cầu đường bộ theo trạng thái giới hạn LRFD *(Thay thế 22TCN 272-05)* |
-| 2 | **TCVN 5574:2018** | ✅ **Đang có hiệu lực** | Thiết kế kết cấu bê tông và bê tông cốt thép |
-| 3 | **TCVN 9386:2012** | ✅ **Đang có hiệu lực** | Thiết kế công trình chịu động đất |
-| 4 | **TCCS 03:2012/TCĐBVN** | ✅ **Đang có hiệu lực** | Tiêu chuẩn thiết kế móng cọc ống thép dạng giếng |
-| 5 | **TCCS 13:2016/TCĐBVN** | ✅ **Đang có hiệu lực** | Tường chắn rọ đá trọng lực – Yêu cầu thiết kế, thi công và nghiệm thu |
-| 6 | **TCCS 15:2016/TCĐBVN** | ✅ **Đang có hiệu lực** | Sửa chữa, tăng cường cấu kiện cầu BTCT bằng vật liệu FRP bám dính ngoài – Tiêu chuẩn thiết kế |
-| 7 | **TCCS 19:2017/TCĐBVN** | ✅ **Đang có hiệu lực** | Sửa chữa, tăng cường cấu kiện cầu BTCT bằng vật liệu FRP bám dính ngoài – Thi công và nghiệm thu |
-| 8 | **TCCS 25:2019/TCĐBVN** | ✅ **Đang có hiệu lực** | Khe co giãn chèn Asphalt (APJ) – Yêu cầu kỹ thuật và thi công |
-| 9 | **TCCS 28:2019/TCĐBVN** | ✅ **Đang có hiệu lực** | Thiết kế, thi công và nghiệm thu neo đất trong công trình giao thông theo công nghệ SEEE |
-| 10 | **TCCS 35:2021/TCĐBVN** | ✅ **Đang có hiệu lực** | Lưới thép xoắn kép gia cố ổn định bề mặt mái dốc, chống đá lở, đá rơi – Yêu cầu kỹ thuật, TC & NT |
+| 1 | **TCVN 11823:2017 (Phần 1 ÷ Phần 14)** | ✅ **Đang có hiệu lực** | Bộ tiêu chuẩn Thiết kế cầu đường bộ theo trạng thái giới hạn LRFD |
+| 2 | **TCVN 10304:2025** | ⚠️ **Bản mới thay thế TCVN 10304:2014** | Thiết kế móng cọc (Bản 2014 lưu tại `99_VanBan_Cu_ChuyenTiep`) |
+| 3 | **TCVN 5574:2018** | ✅ **Đang có hiệu lực** | Thiết kế kết cấu bê tông và bê tông cốt thép |
+| 4 | **TCVN 9386:2012** | ✅ **Đang có hiệu lực** | Thiết kế công trình chịu động đất |
 
 ---
 
-## 04. TIÊU CHUẨN QUỐC GIA (TCVN) & TIÊU CHUẨN CƠ SỞ (TCCS) KHẢO SÁT, THÍ NGHIỆM & NGHIỆM THU (`04_TCVN_KhaoSat_NghiemThu_ThiNghiem`)
+## 04. TIÊU CHUẨN QUỐC GIA (TCVN) KHẢO SÁT, THÍ NGHIỆM & NGHIỆM THU (`04_TCVN_KhaoSat_NghiemThu_ThiNghiem`)
 
-| STT | Ký hiệu Tiêu chuẩn / Văn bản | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng & Thay thế tiêu chuẩn ngành cũ |
+| STT | Ký hiệu Tiêu chuẩn Quốc gia | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng |
 | :--- | :--- | :--- | :--- |
-| 1 | **TCCS 31:2020/TCĐBVN** | ✅ **Đang có hiệu lực** (QĐ 5338/QĐ-TCĐBVN) | **Đường ô tô – Tiêu chuẩn khảo sát** *(Thay thế hoàn toàn 22TCN 263-2000)* |
-| 2 | **TCCS 43:2022/TCĐBVN** | ✅ **Đang có hiệu lực** | Lớp mặt đường bê tông nhựa chặt sử dụng phụ gia SBS trộn khô – Thi công và nghiệm thu |
-| 3 | **TCCS 26:2019/TCĐBVN** | ✅ **Đang có hiệu lực** | Hỗn hợp cấp phối đá chặt gia cố nhựa nóng (ATB) trong KCAD – Thi công và nghiệm thu |
-| 4 | **TCCS 27:2019/TCĐBVN** | ✅ **Đang có hiệu lực** | Nhũ tương nhựa đường axit tưới thấm bám – Yêu cầu kỹ thuật, thi công và nghiệm thu |
-| 5 | **TCCS 21:2018/TCĐBVN** | ✅ **Đang có hiệu lực** | Phương pháp đo và đánh giá chiều sâu lún vệt bánh xe mặt đường mềm bằng thước thẳng |
-| 6 | **TCVN 9398:2012** & **TCVN 9401:2024** | ✅ **Đang có hiệu lực** | Công tác trắc địa trong xây dựng công trình & Đo xử lý số liệu GNSS |
-| 7 | **TCVN 9351:2022** | ✅ **Đang có hiệu lực** | Thí nghiệm xuyên tiêu chuẩn (SPT) |
-| 8 | **TCVN 9393:2012**, **TCVN 9396:2012** | ✅ **Đang có hiệu lực** | Thí nghiệm nén tĩnh cọc & Siêu âm cọc khoan nhồi |
-| 9 | **TCVN 8864:2011**, **TCVN 8865:2011** | ✅ **Đang có hiệu lực** | Đo độ bằng phẳng mặt đường bằng thước 3m & chỉ số độ gồ ghề quốc tế IRI |
+| 1 | **TCVN 9398:2012** | ✅ **Đang có hiệu lực** | Công tác trắc địa trong xây dựng công trình |
+| 2 | **TCVN 9401:2024** | ✅ **Đang có hiệu lực** | Kỹ thuật đo và xử lý số liệu GNSS trong trắc địa công trình |
+| 3 | **TCVN 9351:2022** | ✅ **Đang có hiệu lực** | Thí nghiệm xuyên tiêu chuẩn (SPT) |
+| 4 | **TCVN 9393:2012** | ✅ **Đang có hiệu lực** | Cọc - Phương pháp thí nghiệm bằng tải trọng tĩnh ép dọc trục |
+| 5 | **TCVN 8864:2011** & **TCVN 8865:2011** | ✅ **Đang có hiệu lực** | Đo độ bằng phẳng mặt đường bằng thước 3m & chỉ số độ gồ ghề quốc tế IRI |
 
 ---
 
-## 05. ĐỊNH MỨC, ĐƠN GIÁ & QUẢN LÝ CHI PHÍ (`05_DinhMuc_DonGia_CongBoGiaVL`)
+## 05. QUY CHUẨN KỸ THUẬT QUỐC GIA (`05_QCVN_QuyChuanKyThuatQuocGia`)
+
+| STT | Ký hiệu Quy chuẩn (QCVN) | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng bắt buộc |
+| :--- | :--- | :--- | :--- |
+| 1 | **QCVN 41:2024/BGTVT** | ✅ **Đang có hiệu lực** (từ 01/01/2025) | Quy chuẩn kỹ thuật quốc gia về Báo hiệu đường bộ *(Thay thế QCVN 41:2019/BGTVT)* |
+| 2 | **QCVN 115:2024/BGTVT** | ✅ **Đang có hiệu lực** (từ 01/10/2024) | Quy chuẩn kỹ thuật quốc gia về Đường bộ cao tốc |
+| 3 | **QCVN 07:2023/BXD** | ✅ **Đang có hiệu lực** (từ 01/07/2024) | Quy chuẩn kỹ thuật quốc gia các công trình Hạ tầng kỹ thuật (Phần 4: Công trình giao thông) |
+
+---
+
+## 06. TIÊU CHUẨN CƠ SỞ CỤC ĐƯỜNG BỘ VIỆT NAM (`06_TCCS_TieuChuanCoSo_CDBVN`)
+
+| STT | Ký hiệu Tiêu chuẩn cơ sở (TCCS) | Tình trạng hiệu lực (10/2026) | Nội dung & Thay thế tiêu chuẩn ngành cũ (`22TCN`) |
+| :--- | :--- | :--- | :--- |
+| 1 | **TCCS 38:2022/TCĐBVN** | ✅ **Đang có hiệu lực** | **Áo đường mềm – Các yêu cầu và chỉ dẫn thiết kế** *(Thay thế hoàn toàn 22TCN 211-06)* |
+| 2 | **TCCS 37:2022/TCĐBVN** *(+ Phụ lục)* | ✅ **Đang có hiệu lực** | **Áo đường mềm – Thiết kế theo chỉ số kết cấu (SN)** *(Thay thế 22TCN 274-01)* |
+| 3 | **TCCS 39:2022/TCĐBVN** | ✅ **Đang có hiệu lực** | **Thiết kế mặt đường bê tông xi măng thông thường có khe nối** *(Thay thế 22TCN 223-95)* |
+| 4 | **TCCS 41:2022/TCĐBVN** | ✅ **Đang có hiệu lực** | **Tiêu chuẩn khảo sát, thiết kế nền đường ô tô đắp trên nền đất yếu** *(Thay thế 22TCN 262-2000)* |
+| 5 | **TCCS 42:2022/TCĐBVN** | ✅ **Đang có hiệu lực** | Đường ô tô cao tốc – Thiết kế và tổ chức giao thông giai đoạn phân kỳ đầu tư |
+| 6 | **TCCS 43:2022/TCĐBVN** | ✅ **Đang có hiệu lực** | Lớp mặt đường bê tông nhựa chặt sử dụng phụ gia SBS – Thi công và nghiệm thu |
+| 7 | **TCCS 35:2021/TCĐBVN** | ✅ **Đang có hiệu lực** | Lưới thép xoắn kép gia cố ổn định bề mặt mái dốc, chống đá lở, đá rơi |
+| 8 | **TCCS 34:2020/TCĐBVN** | ✅ **Đang có hiệu lực** | Gờ giảm tốc, gồ giảm tốc trên đường bộ – Yêu cầu thiết kế |
+| 9 | **TCCS 31:2020/TCĐBVN** | ✅ **Đang có hiệu lực** | **Đường ô tô – Tiêu chuẩn khảo sát** *(Thay thế hoàn toàn 22TCN 263-2000)* |
+| 10 | **TCCS 29:2020/TCĐBVN** | ✅ **Đang có hiệu lực** | Nền đường đắp đá – Thiết kế, thi công và nghiệm thu |
+| 11 | **TCCS 28:2019/TCĐBVN** | ✅ **Đang có hiệu lực** | Thiết kế, thi công và nghiệm thu neo đất theo công nghệ SEEE |
+| 12 | **TCCS 27:2019/TCĐBVN** | ✅ **Đang có hiệu lực** | Nhũ tương nhựa đường axit tưới thấm bám – Yêu cầu kỹ thuật, TC & NT |
+| 13 | **TCCS 26:2019/TCĐBVN** | ✅ **Đang có hiệu lực** | Hỗn hợp cấp phối đá chặt gia cố nhựa nóng (ATB) – Thi công và nghiệm thu |
+| 14 | **TCCS 25:2019/TCĐBVN** | ✅ **Đang có hiệu lực** | Khe co giãn chèn Asphalt (APJ) – Yêu cầu kỹ thuật và thi công |
+| 15 | **TCCS 24:2018/TCĐBVN** | ✅ **Đang có hiệu lực** | Tiêu chuẩn tổ chức thiết kế điều khiển giao thông bằng đèn tín hiệu |
+| 16 | **TCCS 21:2018/TCĐBVN** | ✅ **Đang có hiệu lực** | Phương pháp đo và đánh giá chiều sâu lún vệt bánh xe mặt đường mềm bằng thước thẳng |
+| 17 | **TCCS 20:2018/TCĐBVN** | ✅ **Đang có hiệu lực** | Hạng mục công trình an toàn phòng hộ trên đường cao tốc – Thiết kế và thi công |
+| 18 | **TCCS 19:2017/TCĐBVN** | ✅ **Đang có hiệu lực** | Sửa chữa, tăng cường cấu kiện cầu BTCT bằng vật liệu FRP – Thi công và nghiệm thu |
+| 19 | **TCCS 15:2016/TCĐBVN** | ✅ **Đang có hiệu lực** | Sửa chữa, tăng cường cấu kiện cầu BTCT bằng vật liệu FRP – Tiêu chuẩn thiết kế |
+| 20 | **TCCS 13:2016/TCĐBVN** | ✅ **Đang có hiệu lực** | Tường chắn rọ đá trọng lực – Yêu cầu thiết kế, thi công và nghiệm thu |
+| 21 | **TCCS 12:2016/TCĐBVN** | ✅ **Đang có hiệu lực** | Sửa chữa mặt đường bê tông xi măng thông thường có khe nối – Thi công và nghiệm thu |
+| 22 | **TCCS 03:2012/TCĐBVN** | ✅ **Đang có hiệu lực** | Tiêu chuẩn thiết kế móng cọc ống thép dạng giếng |
+
+---
+
+## 07. ĐỊNH MỨC, ĐƠN GIÁ & QUẢN LÝ CHI PHÍ (`07_DinhMuc_DonGia_CongBoGiaVL`)
 
 | STT | Văn bản | Tình trạng hiệu lực (10/2026) | Ghi chú / Thay thế |
 | :--- | :--- | :--- | :--- |

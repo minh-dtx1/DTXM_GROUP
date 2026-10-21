@@ -9,12 +9,15 @@ Kho lưu trữ dữ liệu tiêu chuẩn, cơ sở dữ liệu đầu vào, thư
 ```text
 F:\OneDrive\DTXM_GROUP\
 │
-├── 01_VBPL_TieuChuan_DinhMuc/                  # Pháp lý, Tiêu chuẩn ngành & Định mức
-│   ├── 01_Luat_NghiDinh_ThongTu/               # Luật XD, Luật Đấu thầu, NĐ Quản lý DA, QLCL, Chi phí
-│   ├── 02_TCVN_DuongBo_NutGiao_ATGT/           # TCVN 4054, 22TCN 211-06, Nền đường, Nút giao, QCVN 41...
-│   ├── 03_TCVN_Cau_Cong_Ham/                   # TCVN 11823 (Thiết kế Cầu), Móng cọc, Cống, Tường chắn...
-│   ├── 04_TCVN_KhaoSat_NghiemThu_ThiNghiem/    # TCVN Trắc địa (9398), Địa chất, Nghiệm thu mặt đường...
-│   └── 05_DinhMuc_DonGia_CongBoGiaVL/          # Định mức XD, Đơn giá tỉnh, Công bố giá VLXD hàng quý
+├── 01_VBPL_TieuChuan_DinhMuc/                  # Pháp lý, Tiêu chuẩn Quốc gia, QCVN, TCCS & Định mức
+│   ├── 01_Luat_NghiDinh_ThongTu/               # Luật XD 135/2025, Luật Đường bộ, NĐ 206, 207, 212, 217/2026
+│   ├── 02_TCVN_DuongBo_NutGiao_ATGT/           # Tiêu chuẩn Quốc gia (TCVN) phần Đường bộ, Nền mặt đường
+│   ├── 03_TCVN_Cau_Cong_Ham/                   # Tiêu chuẩn Quốc gia (TCVN 11823:2017) phần Cầu, Cống, Kết cấu
+│   ├── 04_TCVN_KhaoSat_NghiemThu_ThiNghiem/    # Tiêu chuẩn Quốc gia (TCVN) Khảo sát, Trắc địa, Thí nghiệm
+│   ├── 05_QCVN_QuyChuanKyThuatQuocGia/         # Quy chuẩn kỹ thuật Quốc gia (QCVN 41:2024, QCVN 115:2024, QCVN 07)
+│   ├── 06_TCCS_TieuChuanCoSo_CDBVN/            # Tiêu chuẩn cơ sở Cục ĐBVN (TCCS 31, 37, 38, 39, 41, 42, 43...)
+│   ├── 07_DinhMuc_DonGia_CongBoGiaVL/          # Định mức XD (TT 36, 37, 38/2026/TT-BXD), Đơn giá, Công bố giá VLXD
+│   └── 99_VanBan_Cu_ChuyenTiep/                # Lưu trữ văn bản, tiêu chuẩn cũ phục vụ dự án chuyển tiếp
 │
 ├── 02_SoLieu_DauVao_DungChung/                 # KHO CƠ SỞ DỮ LIỆU ĐẦU VÀO DÙNG CHUNG (Theo Tỉnh/Khu vực)
 │   ├── 01_SoLieu_DiaHinh_BanDoNen_DEM/         # Bản đồ địa hình nền 1/10.000, 1/25.000, Ảnh vệ tinh, DEM
