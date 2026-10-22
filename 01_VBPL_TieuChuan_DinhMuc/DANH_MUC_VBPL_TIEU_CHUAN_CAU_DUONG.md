@@ -10,6 +10,8 @@
 >    *(Tất cả các bản TCCS bị hủy bỏ đã được chuyển lưu trữ tại `99_VanBan_Cu_ChuyenTiep`)*.
 > 4. **Bổ sung TCCS mới:** Bổ sung **`TCCS 50:2026/CĐBVN`** (Bảo vệ bề mặt mái dốc bằng thảm thực vật – Quyết định 589/QĐ-CĐBVN ngày 17/06/2026).
 > 5. **Loại bỏ triệt để Tiêu chuẩn ngành cũ (`22TCN`):** Toàn bộ `22TCN 211-06`, `22TCN 263-2000`, `22TCN 223-95`... đã được thay thế bằng hệ thống TCCS & TCVN hiện hành.
+> 6. **Bổ sung Hệ thống Tiêu chuẩn & Quy trình BIM (`08_BIM_TieuChuan_HuongDan_QuyTrinh`):** Quyết định 258/QĐ-TTg (Lộ trình BIM), Quyết định 348/QĐ-BXD (Hướng dẫn chung BIM), Quyết định 347/QĐ-BXD (BIM hạ tầng & dân dụng), TCVN 14177:2024 (ISO 19650-1 & 2), Mẫu Kế hoạch BEP, và Quy trình ứng dụng BIM giao thông.
+> 7. **Bổ sung Hệ thống Quy chuẩn & Tiêu chuẩn Công trình thủy, Đường thủy, Cảng biển (`09_CongTrinhThuy_DuongThuy_CangBien`):** QCVN 39:2020/BGTVT (Báo hiệu ĐTNĐ), TCVN 5664:2009 (Phân cấp kỹ thuật ĐTNĐ & tĩnh không cầu), TCVN 11820:2017 (Cảng biển), QCVN 04-05:2022/BNNPTNT (Thủy lợi), TCVN 9901:2023 (Đê biển), TCVN 9902:2023 (Đê sông), TCVN 9152:2012 (Tường chắn), TCVN 12260:2018 (Chỉnh trị sông) và TCVN 10379:2014 (Neo gia cố mái dốc).
 
 ---
 
@@ -118,3 +120,34 @@
 | 3 | **Thông tư 38/2026/TT-BXD** (26/06/2026) | ✅ **Đang có hiệu lực** (từ 01/07/2026) | Ban hành Hệ thống Định mức xây dựng mới (**Thay thế Thông tư 12/2021/TT-BXD & TT 09/2024**) |
 | 4 | **Thông tư 13/2021/TT-BXD** + **TT 01/2025/TT-BXD** | ✅ **Đang có hiệu lực** | Hướng dẫn đo bóc khối lượng công trình và xác định suất vốn đầu tư |
 | 5 | **Thông tư 60/2025/TT-BXD** (30/12/2025) | 🔄 **Văn bản sửa đổi giai đoạn đầu 2026** | Áp dụng cho các dự án chuyển tiếp trước ngày 01/07/2026 |
+
+---
+
+## 08. TIÊU CHUẨN, HƯỚNG DẪN & QUY TRÌNH BIM (`08_BIM_TieuChuan_HuongDan_QuyTrinh`)
+
+| STT | Văn bản / Tiêu chuẩn | Tình trạng hiệu lực (10/2026) | Nội dung áp dụng trong dự án Hạ tầng & Giao thông |
+| :--- | :--- | :--- | :--- |
+| 1 | **Quyết định 258/QĐ-TTg** (17/03/2023) | ✅ **Đang có hiệu lực** | Phê duyệt Lộ trình áp dụng BIM trong hoạt động xây dựng (Bắt buộc từ năm 2023 với cấp I, đặc biệt; từ 2025 với cấp II vốn đầu tư công, PPP) |
+| 2 | **Quyết định 348/QĐ-BXD** (02/04/2021) | ✅ **Đang có hiệu lực** | Hướng dẫn chung áp dụng BIM: EIR, BEP, CDE (WIP-SHARED-PUBLISHED-ARCHIVED), LOD 100-500, Clash Detection |
+| 3 | **Quyết định 347/QĐ-BXD** (02/04/2021) | ✅ **Đang có hiệu lực** | Hướng dẫn áp dụng BIM cho công trình Dân dụng và Hạ tầng kỹ thuật đô thị (Cầu cống, đường, mạng lưới cấp thoát nước ngầm) |
+| 4 | **TCVN 14177:2024 (ISO 19650-1 & 2)** | ✅ **Đang có hiệu lực** (Công bố 2024) | Tổ chức và số hóa thông tin công trình – Quản lý thông tin bằng BIM (Quy trình 8 bước bàn giao PIM sang AIM, LOIN) |
+| 5 | **Mẫu Kế hoạch BEP Cầu Đường (.docx)** | ✅ **Chuẩn hóa áp dụng** | Bản mẫu Kế hoạch thực hiện BIM chi tiết theo QĐ 348/QĐ-BXD phục vụ lập thầu và quản lý hợp đồng tư vấn thiết kế |
+| 6 | **Quy trình ứng dụng BIM Giao thông (.md)** | ✅ **Chuẩn hóa áp dụng** | Hướng dẫn quy trình 7 bước tích hợp Civil 3D, Revit, Navisworks, bóc tách khối lượng 5D và lưu trữ CDE |
+
+---
+
+## 09. QUY CHUẨN & TIÊU CHUẨN CÔNG TRÌNH THỦY, ĐƯỜNG THỦY NỘI ĐỊA & CẢNG BIỂN (`09_CongTrinhThuy_DuongThuy_CangBien`)
+
+| STT | Quy chuẩn / Tiêu chuẩn | Tình trạng hiệu lực (10/2026) | Nội dung áp dụng bắt buộc |
+| :--- | :--- | :--- | :--- |
+| 1 | **QCVN 39:2020/BGTVT** | ✅ **Đang có hiệu lực** (từ 01/11/2020) | Quy chuẩn kỹ thuật quốc gia về Báo hiệu đường thủy nội địa Việt Nam *(Thay thế QCVN 39:2011/BGTVT)* |
+| 2 | **TCVN 5664:2009** | ✅ **Đang có hiệu lực** | Phân cấp kỹ thuật đường thủy nội địa – Căn cứ bắt buộc xác định **khẩu độ tĩnh không thông thuyền (B x H)** cho cầu qua sông |
+| 3 | **TCVN 11820:2017** | ✅ **Đang có hiệu lực** | Công trình bến cảng biển – Yêu cầu thiết kế (Bến bệ cọc đài cao, bến cừ thép neo, bến trọng lực, tính toán lực cập bến & đệm va) |
+| 4 | **QCVN 04-05:2022/BNNPTNT** | ✅ **Đang có hiệu lực** (từ 01/07/2023) | Quy chuẩn kỹ thuật quốc gia Công trình thủy lợi – Các quy định chủ yếu về thiết kế *(Thay thế QCVN 04-05:2012)* |
+| 5 | **TCVN 9901:2023** | ✅ **Đang có hiệu lực** (Thay 9901:2014) | Công trình thủy lợi – Yêu cầu thiết kế đê biển (Tính sóng leo $R_{sl}$, nước dâng bão $\Delta h_b$, cao trình đỉnh đê an toàn) |
+| 6 | **TCVN 9902:2023** | ✅ **Đang có hiệu lực** (Thay 9902:2014) | Công trình thủy lợi – Yêu cầu thiết kế đê sông (Tần suất lũ P%, cao trình đỉnh đê sông, chống thấm thân & nền đê) |
+| 7 | **TCVN 9152:2012** | ✅ **Đang có hiệu lực** | Quy trình thiết kế tường chắn công trình thủy lợi (Kiểm tra ổn định chống trượt phẳng, chống lật, sức chịu tải nền và lọc ngược) |
+| 8 | **TCVN 12260:2018** | ✅ **Đang có hiệu lực** | Công trình chỉnh trị đường thủy nội địa – Yêu cầu thiết kế (Kè bạt mái, mỏ hàn nắn dòng chủ lưu, đê ngầm hướng dòng) |
+| 9 | **TCVN 10379:2014** | ✅ **Đang có hiệu lực** | Gia cố mái dốc bằng giải pháp neo trong xây dựng công trình thủy (Neo DƯL, neo thụ động, bầu neo gia cố taluy bờ sông bờ kè) |
+| 10 | **Cẩm nang Thiết kế Công trình Thủy (.md)** | ✅ **Chuẩn hóa áp dụng** | Hướng dẫn tính toán tĩnh không thông thuyền cầu qua sông, lực va tàu, đệm va bến cảng và kết cấu kè sông chống sạt lở |
+

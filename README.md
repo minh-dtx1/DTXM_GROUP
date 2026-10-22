@@ -14,9 +14,11 @@ F:\OneDrive\DTXM_GROUP\
 │   ├── 02_TCVN_DuongBo_NutGiao_ATGT/           # Tiêu chuẩn Quốc gia (TCVN) phần Đường bộ, Nền mặt đường
 │   ├── 03_TCVN_Cau_Cong_Ham/                   # Tiêu chuẩn Quốc gia (TCVN 11823:2017) phần Cầu, Cống, Kết cấu
 │   ├── 04_TCVN_KhaoSat_NghiemThu_ThiNghiem/    # Tiêu chuẩn Quốc gia (TCVN) Khảo sát, Trắc địa, Thí nghiệm
-│   ├── 05_QCVN_QuyChuanKyThuatQuocGia/         # Quy chuẩn kỹ thuật Quốc gia (QCVN 41:2024, QCVN 115:2024, QCVN 07)
-│   ├── 06_TCCS_TieuChuanCoSo_CDBVN/            # Tiêu chuẩn cơ sở Cục ĐBVN (TCCS 31, 37, 38, 39, 41, 42, 43...)
+│   ├── 05_QCVN_QuyChuanKyThuatQuocGia/         # Quy chuẩn kỹ thuật Quốc gia (QCVN 41:2024, QCVN 117:2024, QCVN 07)
+│   ├── 06_TCCS_TieuChuanCoSo_CDBVN/            # Tiêu chuẩn cơ sở Cục ĐBVN (TCCS 31, 37, 38, 39, 41, 42, 50:2026...)
 │   ├── 07_DinhMuc_DonGia_CongBoGiaVL/          # Định mức XD (TT 36, 37, 38/2026/TT-BXD), Đơn giá, Công bố giá VLXD
+│   ├── 08_BIM_TieuChuan_HuongDan_QuyTrinh/     # Tiêu chuẩn, Hướng dẫn & Quy trình BIM (QĐ 258, 347, 348, TCVN 14177)
+│   ├── 09_CongTrinhThuy_DuongThuy_CangBien/    # Công trình Thủy, ĐTNĐ & Cảng biển (QCVN 39, TCVN 5664, 11820, QCVN 04-05)
 │   └── 99_VanBan_Cu_ChuyenTiep/                # Lưu trữ văn bản, tiêu chuẩn cũ phục vụ dự án chuyển tiếp
 │
 ├── 02_SoLieu_DauVao_DungChung/                 # KHO CƠ SỞ DỮ LIỆU ĐẦU VÀO DÙNG CHUNG (Theo Tỉnh/Khu vực)
