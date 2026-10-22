@@ -10,10 +10,10 @@
 > - **TCVN 5664:2009**: Phân cấp kỹ thuật đường thủy nội địa (Kích thước khoang thông thuyền cầu).
 > - **TCVN 11820:2017**: Công trình bến cảng biển - Yêu cầu thiết kế.
 > - **QCVN 04-05:2022/BNNPTNT**: Quy chuẩn kỹ thuật quốc gia về công trình thủy lợi - Các quy định chủ yếu về thiết kế.
-> - **TCVN 9901:2023** & **TCVN 9902:2023**: Yêu cầu thiết kế Đê biển & Đê sông.
+> - **TCVN 9901:2023** & **TCVN 9902:2025**: Yêu cầu thiết kế Đê biển & Đê sông (Bản mới nhất theo QĐ 3084/QĐ-BKHCN).
 > - **TCVN 9152:2012**: Quy trình thiết kế tường chắn công trình thủy lợi.
 > - **TCVN 12260:2018**: Công trình chỉnh trị đường thủy nội địa (Kè bạt mái, mỏ hàn nắn dòng).
-> - **TCVN 10379:2014**: Gia cố mái dốc bằng giải pháp neo trong xây dựng công trình thủy.
+> - **TCVN 10335:2014**: Rọ đá, thảm đá phục vụ xây dựng công trình giao thông đường thủy.
 
 ---
 
@@ -96,7 +96,7 @@ $$E_{ship} = \frac{1}{2} M_v \cdot V_n^2 \cdot C_e \cdot C_m \cdot C_s \cdot C_c
 3. [TCVN_11820_2017_CongTrinhBenCangBien_YeuCauThietKe.pdf](file:///F:/OneDrive/DTXM_GROUP/01_VBPL_TieuChuan_DinhMuc/09_CongTrinhThuy_DuongThuy_CangBien/TCVN_11820_2017_CongTrinhBenCangBien_YeuCauThietKe.pdf) - Thiết kế công trình bến cảng biển.
 4. [QCVN_04_05_2022_BNNPTNT_CongTrinhThuyLoi_CacQuyDinhThietKe.pdf](file:///F:/OneDrive/DTXM_GROUP/01_VBPL_TieuChuan_DinhMuc/09_CongTrinhThuy_DuongThuy_CangBien/QCVN_04_05_2022_BNNPTNT_CongTrinhThuyLoi_CacQuyDinhThietKe.pdf) - Quy chuẩn thiết kế công trình thủy lợi.
 5. [TCVN_9901_2023_CongTrinhThuyLoi_YeuCauThietKeDeBien.pdf](file:///F:/OneDrive/DTXM_GROUP/01_VBPL_TieuChuan_DinhMuc/09_CongTrinhThuy_DuongThuy_CangBien/TCVN_9901_2023_CongTrinhThuyLoi_YeuCauThietKeDeBien.pdf) - Thiết kế đê biển mới nhất.
-6. [TCVN_9902_2023_CongTrinhThuyLoi_YeuCauThietKeDeSong.pdf](file:///F:/OneDrive/DTXM_GROUP/01_VBPL_TieuChuan_DinhMuc/09_CongTrinhThuy_DuongThuy_CangBien/TCVN_9902_2023_CongTrinhThuyLoi_YeuCauThietKeDeSong.pdf) - Thiết kế đê sông mới nhất.
+6. [TCVN_9902_2025_CongTrinhThuyLoi_YeuCauThietKeDeSong_MoiNhat.pdf](file:///F:/OneDrive/DTXM_GROUP/01_VBPL_TieuChuan_DinhMuc/09_CongTrinhThuy_DuongThuy_CangBien/TCVN_9902_2025_CongTrinhThuyLoi_YeuCauThietKeDeSong_MoiNhat.pdf) - Thiết kế đê sông mới nhất 2025.
 7. [TCVN_9152_2012_QuyTrinhThietKeTuongChanCongTrinhThuyLoi.pdf](file:///F:/OneDrive/DTXM_GROUP/01_VBPL_TieuChuan_DinhMuc/09_CongTrinhThuy_DuongThuy_CangBien/TCVN_9152_2012_QuyTrinhThietKeTuongChanCongTrinhThuyLoi.pdf) - Thiết kế tường chắn đất thủy lợi.
 8. [TCVN_12260_2018_CongTrinhChinhTriDuongThuyNoiDia.pdf](file:///F:/OneDrive/DTXM_GROUP/01_VBPL_TieuChuan_DinhMuc/09_CongTrinhThuy_DuongThuy_CangBien/TCVN_12260_2018_CongTrinhChinhTriDuongThuyNoiDia.pdf) - Chỉnh trị luồng tàu và kè mỏ hàn.
-9. [TCVN_10379_2014_GiaCoMaiDoc_GiaiPhapNeo_CongTrinhThuy.pdf](file:///F:/OneDrive/DTXM_GROUP/01_VBPL_TieuChuan_DinhMuc/09_CongTrinhThuy_DuongThuy_CangBien/TCVN_10379_2014_GiaCoMaiDoc_GiaiPhapNeo_CongTrinhThuy.pdf) - Gia cố mái dốc bằng neo.
+9. [TCVN_10335_2014_RoDa_ThamDa_CongTrinhGiaoThongDuongThuy.pdf](file:///F:/OneDrive/DTXM_GROUP/01_VBPL_TieuChuan_DinhMuc/09_CongTrinhThuy_DuongThuy_CangBien/TCVN_10335_2014_RoDa_ThamDa_CongTrinhGiaoThongDuongThuy.pdf) - Rọ đá, thảm đá công trình giao thông đường thủy.

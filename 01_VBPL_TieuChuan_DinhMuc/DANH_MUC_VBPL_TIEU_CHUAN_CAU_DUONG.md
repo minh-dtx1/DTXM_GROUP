@@ -47,7 +47,8 @@
 | 4 | **TCVN 8859:2023** | ✅ **Đang có hiệu lực** | Lớp móng cấp phối đá dăm trong kết cấu áo đường *(Thay thế TCVN 8859:2011)* |
 | 5 | **TCVN 8858:2023** | ✅ **Đang có hiệu lực** | Móng CPĐD và cấp phối thiên nhiên gia cố xi măng *(Thay thế TCVN 8858:2011)* |
 | 6 | **TCVN 13567-1:2022** | ✅ **Đang có hiệu lực** | Lớp mặt đường bê tông nhựa nóng chặt (Thay thế TCVN 8819:2011) |
-| 7 | **TCVN 5729:2012** | ⚠️ **Đã thay thế quy chuẩn kỹ thuật** | Chuyển lưu trữ tại mục `99` (Áp dụng **QCVN 117:2024/BGTVT** cho cao tốc) |
+| 7 | **TCVN 10379:2014** | ✅ **Đang có hiệu lực** | Gia cố đất bằng chất kết dính vô cơ, hóa chất hoặc gia cố tổng hợp sử dụng trong XD đường bộ |
+| 8 | **TCVN 5729:2012** | ⚠️ **Đã thay thế quy chuẩn kỹ thuật** | Chuyển lưu trữ tại mục `99` (Áp dụng **QCVN 117:2024/BGTVT** cho cao tốc) |
 
 ---
 
@@ -142,12 +143,12 @@
 | :--- | :--- | :--- | :--- |
 | 1 | **QCVN 39:2020/BGTVT** | ✅ **Đang có hiệu lực** (từ 01/11/2020) | Quy chuẩn kỹ thuật quốc gia về Báo hiệu đường thủy nội địa Việt Nam *(Thay thế QCVN 39:2011/BGTVT)* |
 | 2 | **TCVN 5664:2009** | ✅ **Đang có hiệu lực** | Phân cấp kỹ thuật đường thủy nội địa – Căn cứ bắt buộc xác định **khẩu độ tĩnh không thông thuyền (B x H)** cho cầu qua sông |
-| 3 | **TCVN 11820:2017** | ✅ **Đang có hiệu lực** | Công trình bến cảng biển – Yêu cầu thiết kế (Bến bệ cọc đài cao, bến cừ thép neo, bến trọng lực, tính toán lực cập bến & đệm va) |
-| 4 | **QCVN 04-05:2022/BNNPTNT** | ✅ **Đang có hiệu lực** (từ 01/07/2023) | Quy chuẩn kỹ thuật quốc gia Công trình thủy lợi – Các quy định chủ yếu về thiết kế *(Thay thế QCVN 04-05:2012)* |
+| 3 | **TCVN 11820:2017** | ✅ **Đang có hiệu lực** | Công trình bến cảng biển – Yêu cầu thiết kế (Đã cập nhật các phần mới: **TCVN 11820-1:2026**, **TCVN 11820-2:2026**, **TCVN 11820-5:2021**) |
+| 4 | **QCVN 04-05:2022/BNNPTNT** | ✅ **Đang có hiệu lực** (từ 01/07/2023) | Quy chuẩn kỹ thuật quốc gia Công trình thủy lợi – Các quy định chủ yếu về thiết kế (TT 29/2022/TT-BNNPTNT, thay QCVN 04-05:2012) |
 | 5 | **TCVN 9901:2023** | ✅ **Đang có hiệu lực** (Thay 9901:2014) | Công trình thủy lợi – Yêu cầu thiết kế đê biển (Tính sóng leo $R_{sl}$, nước dâng bão $\Delta h_b$, cao trình đỉnh đê an toàn) |
-| 6 | **TCVN 9902:2023** | ✅ **Đang có hiệu lực** (Thay 9902:2014) | Công trình thủy lợi – Yêu cầu thiết kế đê sông (Tần suất lũ P%, cao trình đỉnh đê sông, chống thấm thân & nền đê) |
+| 6 | **TCVN 9902:2025** | ✅ **Đang có hiệu lực MỚI NHẤT** | Đê sông – Yêu cầu thiết kế (QĐ 3084/QĐ-BKHCN ngày 08/10/2025, thay thế TCVN 9902:2016 và TCVN 9902:2023) |
 | 7 | **TCVN 9152:2012** | ✅ **Đang có hiệu lực** | Quy trình thiết kế tường chắn công trình thủy lợi (Kiểm tra ổn định chống trượt phẳng, chống lật, sức chịu tải nền và lọc ngược) |
 | 8 | **TCVN 12260:2018** | ✅ **Đang có hiệu lực** | Công trình chỉnh trị đường thủy nội địa – Yêu cầu thiết kế (Kè bạt mái, mỏ hàn nắn dòng chủ lưu, đê ngầm hướng dòng) |
-| 9 | **TCVN 10379:2014** | ✅ **Đang có hiệu lực** | Gia cố mái dốc bằng giải pháp neo trong xây dựng công trình thủy (Neo DƯL, neo thụ động, bầu neo gia cố taluy bờ sông bờ kè) |
+| 9 | **TCVN 10335:2014** | ✅ **Đang có hiệu lực** | Rọ đá, thảm đá và các sản phẩm mắt lưới lục giác xoắn kép phục vụ xây dựng công trình giao thông đường thủy |
 | 10 | **Cẩm nang Thiết kế Công trình Thủy (.md)** | ✅ **Chuẩn hóa áp dụng** | Hướng dẫn tính toán tĩnh không thông thuyền cầu qua sông, lực va tàu, đệm va bến cảng và kết cấu kè sông chống sạt lở |
 
