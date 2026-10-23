@@ -56,12 +56,23 @@
 
 | STT | Ký hiệu Tiêu chuẩn Quốc gia | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng |
 | :--- | :--- | :--- | :--- |
-| 1 | **TCVN 11823:2017 (Phần 1 ÷ Phần 14)** | ✅ **Đang có hiệu lực** | Bộ tiêu chuẩn Thiết kế cầu đường bộ theo trạng thái giới hạn LRFD |
+| 1 | **TCVN 11823:2017 (Phần 1 ÷ Phần 14)** | ✅ **Đang có hiệu lực** | Bộ tiêu chuẩn Thiết kế cầu đường bộ theo trạng thái giới hạn LRFD (áp dụng cho mọi cấp đường bộ bao gồm đường cao tốc) |
 | 2 | **TCVN 10304:2025** | ✅ **Đang có hiệu lực MỚI NHẤT** | **Thiết kế móng cọc** (Công bố 07/2025 thay thế TCVN 10304:2014; bản 2014 lưu tại `99_VanBan_Cu_ChuyenTiep`) |
 | 3 | **TCVN 9394:2012** | ✅ **Đang có hiệu lực** | Đóng và ép cọc – Thi công và nghiệm thu (áp dụng cho cọc BTCT đúc sẵn, cọc PHC, cọc thép) |
 | 4 | **TCVN 9395:2012** | ✅ **Đang có hiệu lực** | Cọc khoan nhồi – Thi công và nghiệm thu (áp dụng cho cọc khoan nhồi mố trụ cầu, tường vây) |
-| 5 | **TCVN 5574:2018** | ✅ **Đang có hiệu lực** | Thiết kế kết cấu bê tông và bê tông cốt thép |
-| 6 | **TCVN 9386:2012** | ✅ **Đang có hiệu lực** | Thiết kế công trình chịu động đất |
+| 5 | **TCVN 10380:2014** | ✅ **Đang có hiệu lực** | **Đường giao thông nông thôn – Yêu cầu thiết kế** (Bao gồm quy định thiết kế cầu GTNT loại A, B, C; tải trọng H10, H13, 0.5-0.65 HL-93; cống tràn, ngầm tràn) |
+| 6 | **TCVN 10940:2015** | ✅ **Đang có hiệu lực** | **Cầu treo dân sinh – Yêu cầu thiết kế** (Tiêu chuẩn kỹ thuật cáp chủ, cáp treo, tháp cầu, hố thế mố neo cáp, kiểm toán rung lắc khí động học vùng núi) |
+| 7 | **TCVN 8718:2011** | ✅ **Đang có hiệu lực** | **Tiêu chuẩn thiết kế cầu đường sắt** (Khổ đường 1000mm và 1435mm; tải trọng đoàn tàu chuẩn T-22, C-14, lực hãm, lực giật ngang, kiểm toán mỏi và độ võng dầm thép/BTCT) |
+| 8 | **TCVN 13575:2022** | ✅ **Đang có hiệu lực MỚI NHẤT** | **Đường sắt đô thị – Yêu cầu kỹ thuật thiết kế công trình và kết cấu hạ tầng** (Trọng tâm Cầu cạn Viaduct, dầm U, dầm hộp đúc hẫng, ga trên cao, tương tác ray - nhịp TSI) |
+| 9 | **TCVN 5574:2018** | ✅ **Đang có hiệu lực** | Thiết kế kết cấu bê tông và bê tông cốt thép |
+| 10 | **TCVN 9386:2012** | ✅ **Đang có hiệu lực** | Thiết kế công trình chịu động đất |
+
+> 📌 **Lưu ý chuyên môn về Cầu đường cao tốc:**  
+> Tại Việt Nam, **không có tiêu chuẩn riêng biệt độc lập tên là "TCVN Cầu cao tốc"**. Thay vào đó, thiết kế cầu trên đường bộ cao tốc tuân thủ hệ thống văn bản pháp quy kỹ thuật đồng bộ:  
+> 1. **QCVN 117:2024/BGTVT** (Quy chuẩn kỹ thuật quốc gia về đường bộ cao tốc): Quy định bắt buộc về tĩnh không xe chạy ($\ge 4.75$m), khẩu độ dải an toàn, bề rộng mặt cầu xe chạy, phân kỳ đầu tư và bắt buộc áp dụng tải trọng thiết kế **HL-93**.  
+> 2. **TCVN 11823:2017**: Tiêu chuẩn thiết kế kết cấu cầu LRFD (kết cấu phần trên, mố trụ, móng cọc).  
+> 3. **TCCS 20:2018/TCĐBVN**: Tiêu chuẩn lan can phòng hộ trên đường bộ cao tốc (cấp an toàn H2, H3).  
+> 4. **TCCS 42:2022/TCĐBVN**: Hướng dẫn thiết kế cầu đường ô tô cao tốc trong giai đoạn phân kỳ đầu tư.
 
 ---
 
