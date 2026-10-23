@@ -57,9 +57,11 @@
 | STT | Ký hiệu Tiêu chuẩn Quốc gia | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng |
 | :--- | :--- | :--- | :--- |
 | 1 | **TCVN 11823:2017 (Phần 1 ÷ Phần 14)** | ✅ **Đang có hiệu lực** | Bộ tiêu chuẩn Thiết kế cầu đường bộ theo trạng thái giới hạn LRFD |
-| 2 | **TCVN 10304:2025** | ⚠️ **Bản mới thay thế TCVN 10304:2014** | Thiết kế móng cọc (Bản 2014 lưu tại `99_VanBan_Cu_ChuyenTiep`) |
-| 3 | **TCVN 5574:2018** | ✅ **Đang có hiệu lực** | Thiết kế kết cấu bê tông và bê tông cốt thép |
-| 4 | **TCVN 9386:2012** | ✅ **Đang có hiệu lực** | Thiết kế công trình chịu động đất |
+| 2 | **TCVN 10304:2025** | ✅ **Đang có hiệu lực MỚI NHẤT** | **Thiết kế móng cọc** (Công bố 07/2025 thay thế TCVN 10304:2014; bản 2014 lưu tại `99_VanBan_Cu_ChuyenTiep`) |
+| 3 | **TCVN 9394:2012** | ✅ **Đang có hiệu lực** | Đóng và ép cọc – Thi công và nghiệm thu (áp dụng cho cọc BTCT đúc sẵn, cọc PHC, cọc thép) |
+| 4 | **TCVN 9395:2012** | ✅ **Đang có hiệu lực** | Cọc khoan nhồi – Thi công và nghiệm thu (áp dụng cho cọc khoan nhồi mố trụ cầu, tường vây) |
+| 5 | **TCVN 5574:2018** | ✅ **Đang có hiệu lực** | Thiết kế kết cấu bê tông và bê tông cốt thép |
+| 6 | **TCVN 9386:2012** | ✅ **Đang có hiệu lực** | Thiết kế công trình chịu động đất |
 
 ---
 
