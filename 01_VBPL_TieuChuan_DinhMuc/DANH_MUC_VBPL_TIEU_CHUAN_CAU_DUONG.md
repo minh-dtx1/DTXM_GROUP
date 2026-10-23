@@ -39,33 +39,33 @@
 
 ## 02. TIÊU CHUẨN QUỐC GIA (TCVN) PHẦN ĐƯỜNG BỘ (`02_TCVN_DuongBo_NutGiao_ATGT`)
 
-| STT | Ký hiệu Tiêu chuẩn Quốc gia | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng |
+| STT | Ký hiệu Tiêu chuẩn Quốc gia | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng & Tình trạng lưu trữ |
 | :--- | :--- | :--- | :--- |
-| 1 | **TCVN 4054:2005** | ✅ **Đang có hiệu lực** | Đường ô tô - Yêu cầu thiết kế (áp dụng cho đường ngoài đô thị) |
-| 2 | **TCVN 13592:2022** | ✅ **Đang có hiệu lực** | Đường đô thị - Yêu cầu thiết kế *(Thay thế TCXDVN 104:2007)* |
-| 3 | **TCVN 9436:2012** | ✅ **Đang có hiệu lực** | Nền đường ô tô - Thi công và nghiệm thu |
-| 4 | **TCVN 8859:2023** | ✅ **Đang có hiệu lực** | Lớp móng cấp phối đá dăm trong kết cấu áo đường *(Thay thế TCVN 8859:2011)* |
-| 5 | **TCVN 8858:2023** | ✅ **Đang có hiệu lực** | Móng CPĐD và cấp phối thiên nhiên gia cố xi măng *(Thay thế TCVN 8858:2011)* |
-| 6 | **TCVN 13567-1:2022** | ✅ **Đang có hiệu lực** | Lớp mặt đường bê tông nhựa nóng chặt (Thay thế TCVN 8819:2011) |
-| 7 | **TCVN 10379:2014** | ✅ **Đang có hiệu lực** | Gia cố đất bằng chất kết dính vô cơ, hóa chất hoặc gia cố tổng hợp sử dụng trong XD đường bộ |
+| 1 | **TCVN 4054:2005** | ✅ **Đang có hiệu lực** | Đường ô tô - Yêu cầu thiết kế *(Bản toàn văn PDF)* |
+| 2 | **TCVN 13592:2022** | ✅ **Đang có hiệu lực** | Đường đô thị - Yêu cầu thiết kế *(Bản toàn văn PDF 2.7MB, thay thế TCXDVN 104:2007)* |
+| 3 | **TCVN 9436:2012** | ✅ **Đang có hiệu lực** | Nền đường ô tô - Thi công và nghiệm thu *(Bản toàn văn PDF)* |
+| 4 | **TCVN 8859:2023** | ✅ **Đang có hiệu lực** | Lớp móng cấp phối đá dăm trong kết cấu áo đường *(Bản toàn văn PDF)* |
+| 5 | **TCVN 8858:2023** | ✅ **Đang có hiệu lực** | Móng CPĐD và cấp phối thiên nhiên gia cố xi măng *(Bản toàn văn PDF)* |
+| 6 | **TCVN 13567-1:2022** | ✅ **Đang có hiệu lực** | Lớp mặt đường bê tông nhựa nóng chặt *(Thay thế TCVN 8819:2011; đang cập nhật bản số hóa)* |
+| 7 | **TCVN 10379:2014** | ✅ **Đang có hiệu lực** | Gia cố đất bằng chất kết dính vô cơ, hóa chất *(Đang cập nhật bản scan toàn văn)* |
 | 8 | **TCVN 5729:2012** | ⚠️ **Đã thay thế quy chuẩn kỹ thuật** | Chuyển lưu trữ tại mục `99` (Áp dụng **QCVN 117:2024/BGTVT** cho cao tốc) |
 
 ---
 
 ## 03. TIÊU CHUẨN QUỐC GIA (TCVN) PHẦN CẦU, CỐNG & KẾT CẤU (`03_TCVN_Cau_Cong_Ham`)
 
-| STT | Ký hiệu Tiêu chuẩn Quốc gia | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng |
+| STT | Ký hiệu Tiêu chuẩn Quốc gia | Tình trạng hiệu lực (10/2026) | Ghi chú áp dụng & Tình trạng lưu trữ |
 | :--- | :--- | :--- | :--- |
-| 1 | **TCVN 11823:2017 (Phần 1 ÷ Phần 14)** | ✅ **Đang có hiệu lực** | Bộ tiêu chuẩn Thiết kế cầu đường bộ theo trạng thái giới hạn LRFD (áp dụng cho mọi cấp đường bộ bao gồm đường cao tốc) |
-| 2 | **TCVN 10304:2025** | ✅ **Đang có hiệu lực MỚI NHẤT** | **Thiết kế móng cọc** (Công bố 07/2025 thay thế TCVN 10304:2014; bản 2014 lưu tại `99_VanBan_Cu_ChuyenTiep`) |
-| 3 | **TCVN 9394:2012** | ✅ **Đang có hiệu lực** | Đóng và ép cọc – Thi công và nghiệm thu (áp dụng cho cọc BTCT đúc sẵn, cọc PHC, cọc thép) |
-| 4 | **TCVN 9395:2012** | ✅ **Đang có hiệu lực** | Cọc khoan nhồi – Thi công và nghiệm thu (áp dụng cho cọc khoan nhồi mố trụ cầu, tường vây) |
-| 5 | **TCVN 10380:2014** | ✅ **Đang có hiệu lực** | **Đường giao thông nông thôn – Yêu cầu thiết kế** (Bao gồm quy định thiết kế cầu GTNT loại A, B, C; tải trọng H10, H13, 0.5-0.65 HL-93; cống tràn, ngầm tràn) |
-| 6 | **TCVN 10940:2015** | ✅ **Đang có hiệu lực** | **Cầu treo dân sinh – Yêu cầu thiết kế** (Tiêu chuẩn kỹ thuật cáp chủ, cáp treo, tháp cầu, hố thế mố neo cáp, kiểm toán rung lắc khí động học vùng núi) |
-| 7 | **TCVN 8718:2011** | ✅ **Đang có hiệu lực** | **Tiêu chuẩn thiết kế cầu đường sắt** (Khổ đường 1000mm và 1435mm; tải trọng đoàn tàu chuẩn T-22, C-14, lực hãm, lực giật ngang, kiểm toán mỏi và độ võng dầm thép/BTCT) |
-| 8 | **TCVN 13575:2022** | ✅ **Đang có hiệu lực MỚI NHẤT** | **Đường sắt đô thị – Yêu cầu kỹ thuật thiết kế công trình và kết cấu hạ tầng** (Trọng tâm Cầu cạn Viaduct, dầm U, dầm hộp đúc hẫng, ga trên cao, tương tác ray - nhịp TSI) |
-| 9 | **TCVN 5574:2018** | ✅ **Đang có hiệu lực** | Thiết kế kết cấu bê tông và bê tông cốt thép |
-| 10 | **TCVN 9386:2012** *(Bộ tiêu chuẩn nền tảng toàn văn)* | ⚠️ **Đã có bản thay thế TCVN 9386:2025** | **Thiết kế công trình chịu động đất** (Lưu trữ bản toàn văn 3.5MB phục vụ tra cứu công thức, hệ số, phổ phản ứng). Bản thay thế **TCVN 9386:2025** (Phần 1 & Phần 5) đã được công bố theo QĐ 4647/QĐ-BKHCN ngày 31/12/2025 (hiện đang lưu hành ấn bản sách chuyên ngành từ IBST). |
+| 1 | **TCVN 11823:2017 (Tập 1 ÷ Tập 12)** | ✅ **Đang có hiệu lực** | **Bộ tiêu chuẩn Thiết kế cầu đường bộ theo LRFD** *(Bản toàn văn PDF đầy đủ 12 tập, áp dụng cho mọi cấp đường bộ gồm cả cao tốc)* |
+| 2 | **TCVN 10304:2014** | ⚠️ **Tiêu chuẩn nền tảng toàn văn** | **Thiết kế móng cọc** *(Bản toàn văn PDF đầy đủ 86 trang phục vụ tính toán)*. Bản cập nhật **TCVN 10304:2025** (công bố 07/2025) đang phát hành dạng sách/ấn phẩm chuyên ngành, sẽ cập nhật khi có bản mở toàn văn. |
+| 3 | **TCVN 5574:2018** | ✅ **Đang có hiệu lực** | **Thiết kế kết cấu bê tông và bê tông cốt thép** *(Bản toàn văn PDF đầy đủ 7.9MB)* |
+| 4 | **TCVN 9386:2012** | ⚠️ **Tiêu chuẩn nền tảng toàn văn** | **Thiết kế công trình chịu động đất** *(Bản toàn văn PDF đầy đủ 3.5MB phục vụ tra cứu phổ và công thức)*. Bản thay thế **TCVN 9386:2025** (QĐ 4647/QĐ-BKHCN ngày 31/12/2025) đang phát hành dạng sách chuyên ngành IBST. |
+| 5 | **TCVN 9394:2012** | ✅ **Đang có hiệu lực** | Đóng và ép cọc – Thi công và nghiệm thu *(Đang cập nhật bản scan toàn văn)* |
+| 6 | **TCVN 9395:2012** | ✅ **Đang có hiệu lực** | Cọc khoan nhồi – Thi công và nghiệm thu *(Đang cập nhật bản scan toàn văn)* |
+| 7 | **TCVN 10380:2014** | ✅ **Đang có hiệu lực** | Đường giao thông nông thôn – Yêu cầu thiết kế (cầu loại A, B, C; tải trọng H10, H13, 0.5-0.65 HL-93) *(Đang cập nhật bản scan toàn văn)* |
+| 8 | **TCVN 10940:2015** | ✅ **Đang có hiệu lực** | Cầu treo dân sinh – Yêu cầu thiết kế (cáp chủ, cáp treo, tháp cầu, mố neo) *(Đang cập nhật bản scan toàn văn)* |
+| 9 | **TCVN 8718:2011** | ✅ **Đang có hiệu lực** | Tiêu chuẩn thiết kế cầu đường sắt khổ 1000mm & 1435mm (tải trọng T-22, C-14, kiểm toán mỏi) *(Đang cập nhật bản scan toàn văn)* |
+| 10 | **TCVN 13575:2022** | ✅ **Đang có hiệu lực MỚI NHẤT** | Đường sắt đô thị – Thiết kế công trình và kết cấu hạ tầng (Cầu cạn Viaduct, dầm U, dầm hộp, tương tác ray TSI) *(Đang cập nhật bản scan toàn văn)* |
 
 > 📌 **Lưu ý chuyên môn về Cầu đường cao tốc:**  
 > Tại Việt Nam, **không có tiêu chuẩn riêng biệt độc lập tên là "TCVN Cầu cao tốc"**. Thay vào đó, thiết kế cầu trên đường bộ cao tốc tuân thủ hệ thống văn bản pháp quy kỹ thuật đồng bộ:  
@@ -139,29 +139,29 @@
 
 ## 08. TIÊU CHUẨN, HƯỚNG DẪN & QUY TRÌNH BIM (`08_BIM_TieuChuan_HuongDan_QuyTrinh`)
 
-| STT | Văn bản / Tiêu chuẩn | Tình trạng hiệu lực (10/2026) | Nội dung áp dụng trong dự án Hạ tầng & Giao thông |
+| STT | Văn bản / Tiêu chuẩn | Tình trạng hiệu lực (10/2026) | Nội dung áp dụng & Tình trạng tài liệu |
 | :--- | :--- | :--- | :--- |
-| 1 | **Quyết định 258/QĐ-TTg** (17/03/2023) | ✅ **Đang có hiệu lực** | Phê duyệt Lộ trình áp dụng BIM trong hoạt động xây dựng (Bắt buộc từ năm 2023 với cấp I, đặc biệt; từ 2025 với cấp II vốn đầu tư công, PPP) |
-| 2 | **Quyết định 348/QĐ-BXD** (02/04/2021) | ✅ **Đang có hiệu lực** | Hướng dẫn chung áp dụng BIM: EIR, BEP, CDE (WIP-SHARED-PUBLISHED-ARCHIVED), LOD 100-500, Clash Detection |
-| 3 | **Quyết định 347/QĐ-BXD** (02/04/2021) | ✅ **Đang có hiệu lực** | Hướng dẫn áp dụng BIM cho công trình Dân dụng và Hạ tầng kỹ thuật đô thị (Cầu cống, đường, mạng lưới cấp thoát nước ngầm) |
-| 4 | **TCVN 14177:2024 (ISO 19650-1 & 2)** | ✅ **Đang có hiệu lực** (Công bố 2024) | Tổ chức và số hóa thông tin công trình – Quản lý thông tin bằng BIM (Quy trình 8 bước bàn giao PIM sang AIM, LOIN) |
-| 5 | **Mẫu Kế hoạch BEP Cầu Đường (.docx)** | ✅ **Chuẩn hóa áp dụng** | Bản mẫu Kế hoạch thực hiện BIM chi tiết theo QĐ 348/QĐ-BXD phục vụ lập thầu và quản lý hợp đồng tư vấn thiết kế |
-| 6 | **Quy trình ứng dụng BIM Giao thông (.md)** | ✅ **Chuẩn hóa áp dụng** | Hướng dẫn quy trình 7 bước tích hợp Civil 3D, Revit, Navisworks, bóc tách khối lượng 5D và lưu trữ CDE |
+| 1 | **Quyết định 258/QĐ-TTg** (17/03/2023) | ✅ **Đang có hiệu lực** | Phê duyệt Lộ trình áp dụng BIM trong hoạt động xây dựng *(Bản toàn văn PDF chính thức Thủ tướng ký)* |
+| 2 | **Mẫu Kế hoạch BEP Cầu Đường (.docx)** | ✅ **Chuẩn hóa áp dụng** | Bản mẫu Kế hoạch thực hiện BIM chi tiết phục vụ lập thầu và quản lý hợp đồng tư vấn thiết kế *(File mẫu thực tế)* |
+| 3 | **Quy trình ứng dụng BIM Giao thông (.md)** | ✅ **Chuẩn hóa áp dụng** | Hướng dẫn quy trình 7 bước tích hợp Civil 3D, Revit, Navisworks, bóc tách khối lượng 5D và CDE *(Tài liệu kỹ thuật)* |
+| 4 | **Quyết định 348/QĐ-BXD** (02/04/2021) | ✅ **Đang có hiệu lực** | Hướng dẫn chung áp dụng BIM: EIR, BEP, CDE, LOD *(Đang cập nhật bản số hóa toàn văn)* |
+| 5 | **Quyết định 347/QĐ-BXD** (02/04/2021) | ✅ **Đang có hiệu lực** | Hướng dẫn áp dụng BIM cho Hạ tầng kỹ thuật đô thị *(Đang cập nhật bản số hóa toàn văn)* |
+| 6 | **TCVN 14177:2024 (ISO 19650-1 & 2)** | ✅ **Đang có hiệu lực** | Quản lý thông tin bằng BIM *(Đang cập nhật bản số hóa toàn văn)* |
 
 ---
 
 ## 09. QUY CHUẨN & TIÊU CHUẨN CÔNG TRÌNH THỦY, ĐƯỜNG THỦY NỘI ĐỊA & CẢNG BIỂN (`09_CongTrinhThuy_DuongThuy_CangBien`)
 
-| STT | Quy chuẩn / Tiêu chuẩn | Tình trạng hiệu lực (10/2026) | Nội dung áp dụng bắt buộc |
+| STT | Quy chuẩn / Tiêu chuẩn | Tình trạng hiệu lực (10/2026) | Nội dung áp dụng & Tình trạng tài liệu |
 | :--- | :--- | :--- | :--- |
-| 1 | **QCVN 39:2020/BGTVT** | ✅ **Đang có hiệu lực** (từ 01/11/2020) | Quy chuẩn kỹ thuật quốc gia về Báo hiệu đường thủy nội địa Việt Nam *(Thay thế QCVN 39:2011/BGTVT)* |
-| 2 | **TCVN 5664:2009** | ✅ **Đang có hiệu lực** | Phân cấp kỹ thuật đường thủy nội địa – Căn cứ bắt buộc xác định **khẩu độ tĩnh không thông thuyền (B x H)** cho cầu qua sông |
-| 3 | **TCVN 11820:2017** | ✅ **Đang có hiệu lực** | Công trình bến cảng biển – Yêu cầu thiết kế (Đã cập nhật các phần mới: **TCVN 11820-1:2026**, **TCVN 11820-2:2026**, **TCVN 11820-5:2021**) |
-| 4 | **QCVN 04-05:2022/BNNPTNT** | ✅ **Đang có hiệu lực** (từ 01/07/2023) | Quy chuẩn kỹ thuật quốc gia Công trình thủy lợi – Các quy định chủ yếu về thiết kế (TT 29/2022/TT-BNNPTNT, thay QCVN 04-05:2012) |
-| 5 | **TCVN 9901:2023** | ✅ **Đang có hiệu lực** (Thay 9901:2014) | Công trình thủy lợi – Yêu cầu thiết kế đê biển (Tính sóng leo $R_{sl}$, nước dâng bão $\Delta h_b$, cao trình đỉnh đê an toàn) |
-| 6 | **TCVN 9902:2025** | ✅ **Đang có hiệu lực MỚI NHẤT** | Đê sông – Yêu cầu thiết kế (QĐ 3084/QĐ-BKHCN ngày 08/10/2025, thay thế TCVN 9902:2016 và TCVN 9902:2023) |
-| 7 | **TCVN 9152:2012** | ✅ **Đang có hiệu lực** | Quy trình thiết kế tường chắn công trình thủy lợi (Kiểm tra ổn định chống trượt phẳng, chống lật, sức chịu tải nền và lọc ngược) |
-| 8 | **TCVN 12260:2018** | ✅ **Đang có hiệu lực** | Công trình chỉnh trị đường thủy nội địa – Yêu cầu thiết kế (Kè bạt mái, mỏ hàn nắn dòng chủ lưu, đê ngầm hướng dòng) |
-| 9 | **TCVN 10335:2014** | ✅ **Đang có hiệu lực** | Rọ đá, thảm đá và các sản phẩm mắt lưới lục giác xoắn kép phục vụ xây dựng công trình giao thông đường thủy |
-| 10 | **Cẩm nang Thiết kế Công trình Thủy (.md)** | ✅ **Chuẩn hóa áp dụng** | Hướng dẫn tính toán tĩnh không thông thuyền cầu qua sông, lực va tàu, đệm va bến cảng và kết cấu kè sông chống sạt lở |
+| 1 | **QCVN 39:2020/BGTVT** | ✅ **Đang có hiệu lực** | Quy chuẩn kỹ thuật quốc gia về Báo hiệu đường thủy nội địa Việt Nam *(Bản scan toàn văn 2.3MB có dấu đỏ Bộ GTVT)* |
+| 2 | **Cẩm nang Thiết kế Công trình Thủy (.md)** | ✅ **Chuẩn hóa áp dụng** | Hướng dẫn tính toán tĩnh không thông thuyền cầu qua sông, lực va tàu, đệm va bến cảng *(Tài liệu kỹ thuật)* |
+| 3 | **TCVN 5664:2009** | ✅ **Đang có hiệu lực** | Phân cấp kỹ thuật đường thủy nội địa – Căn cứ xác định **tĩnh không thông thuyền (B x H)** *(Đang cập nhật bản scan toàn văn)* |
+| 4 | **TCVN 11820:2017** | ✅ **Đang có hiệu lực** | Công trình bến cảng biển – Yêu cầu thiết kế *(Đang cập nhật bản scan toàn văn)* |
+| 5 | **QCVN 04-05:2022/BNNPTNT** | ✅ **Đang có hiệu lực** | Quy chuẩn kỹ thuật quốc gia Công trình thủy lợi – Quy định thiết kế *(Đang cập nhật bản scan toàn văn)* |
+| 6 | **TCVN 9901:2023** | ✅ **Đang có hiệu lực** | Yêu cầu thiết kế đê biển *(Đang cập nhật bản scan toàn văn)* |
+| 7 | **TCVN 9902:2025** | ✅ **Đang có hiệu lực MỚI NHẤT** | Đê sông – Yêu cầu thiết kế *(Đang cập nhật bản scan toàn văn)* |
+| 8 | **TCVN 9152:2012** | ✅ **Đang có hiệu lực** | Quy trình thiết kế tường chắn công trình thủy lợi *(Đang cập nhật bản scan toàn văn)* |
+| 9 | **TCVN 12260:2018** | ✅ **Đang có hiệu lực** | Công trình chỉnh trị đường thủy nội địa – Yêu cầu thiết kế *(Đang cập nhật bản scan toàn văn)* |
+| 10 | **TCVN 10335:2014** | ✅ **Đang có hiệu lực** | Rọ đá, thảm đá phục vụ xây dựng công trình giao thông đường thủy *(Đang cập nhật bản scan toàn văn)* |
 
