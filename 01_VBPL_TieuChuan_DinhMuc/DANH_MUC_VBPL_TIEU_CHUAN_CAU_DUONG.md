@@ -59,13 +59,15 @@
 | 1 | **TCVN 11823:2017 (Tập 1 ÷ Tập 12)** | ✅ **Đang có hiệu lực** | **Bộ tiêu chuẩn Thiết kế cầu đường bộ theo LRFD** *(Bản toàn văn PDF đầy đủ 12 tập, áp dụng cho mọi cấp đường bộ gồm cả cao tốc)* |
 | 2 | **TCVN 10304:2014** | ⚠️ **Tiêu chuẩn nền tảng toàn văn** | **Thiết kế móng cọc** *(Bản toàn văn PDF đầy đủ 86 trang phục vụ tính toán)*. Bản cập nhật **TCVN 10304:2025** (công bố 07/2025) đang phát hành dạng sách/ấn phẩm chuyên ngành, sẽ cập nhật khi có bản mở toàn văn. |
 | 3 | **TCVN 5574:2018** | ✅ **Đang có hiệu lực** | **Thiết kế kết cấu bê tông và bê tông cốt thép** *(Bản toàn văn PDF đầy đủ 7.9MB)* |
-| 4 | **TCVN 9386:2012** | ⚠️ **Tiêu chuẩn nền tảng toàn văn** | **Thiết kế công trình chịu động đất** *(Bản toàn văn PDF đầy đủ 3.5MB phục vụ tra cứu phổ và công thức)*. Bản thay thế **TCVN 9386:2025** (QĐ 4647/QĐ-BKHCN ngày 31/12/2025) đang phát hành dạng sách chuyên ngành IBST. |
-| 5 | **TCVN 9394:2012** | ✅ **Đang có hiệu lực** | Đóng và ép cọc – Thi công và nghiệm thu *(Đang cập nhật bản scan toàn văn)* |
-| 6 | **TCVN 9395:2012** | ✅ **Đang có hiệu lực** | Cọc khoan nhồi – Thi công và nghiệm thu *(Đang cập nhật bản scan toàn văn)* |
-| 7 | **TCVN 10380:2014** | ✅ **Đang có hiệu lực** | Đường giao thông nông thôn – Yêu cầu thiết kế (cầu loại A, B, C; tải trọng H10, H13, 0.5-0.65 HL-93) *(Đang cập nhật bản scan toàn văn)* |
-| 8 | **TCVN 10940:2015** | ✅ **Đang có hiệu lực** | Cầu treo dân sinh – Yêu cầu thiết kế (cáp chủ, cáp treo, tháp cầu, mố neo) *(Đang cập nhật bản scan toàn văn)* |
-| 9 | **TCVN 8718:2011** | ✅ **Đang có hiệu lực** | Tiêu chuẩn thiết kế cầu đường sắt khổ 1000mm & 1435mm (tải trọng T-22, C-14, kiểm toán mỏi) *(Đang cập nhật bản scan toàn văn)* |
-| 10 | **TCVN 13575:2022** | ✅ **Đang có hiệu lực MỚI NHẤT** | Đường sắt đô thị – Thiết kế công trình và kết cấu hạ tầng (Cầu cạn Viaduct, dầm U, dầm hộp, tương tác ray TSI) *(Đang cập nhật bản scan toàn văn)* |
+| 4 | **TCVN 9386:2025 (Phần 1 & Phần 5)** | ✅ **Đang có hiệu lực MỚI NHẤT** | **Thiết kế kết cấu chịu động đất** *(Bản toàn văn PDF đầy đủ chính thức: Phần 1 dày 212 trang, Phần 5 dày 39 trang, ban hành theo QĐ 4647/QĐ-BKHCN ngày 31/12/2025)* |
+| 5 | **TCVN 9386:2012** | 🔄 **Tiêu chuẩn nền tảng đối chiếu** | Thiết kế công trình chịu động đất *(Bản toàn văn PDF đầy đủ 3.5MB phục vụ tra cứu đối chiếu lịch sử)* |
+| 6 | **TCVN 13594:2022 / 2023 (Phần 1 ÷ Phần 10)** | ✅ **Đang có hiệu lực** | **Thiết kế cầu đường sắt khổ 1435 mm, vận tốc đến 350 km/h** *(Bản toàn văn scan đầy đủ 10 tập, hơn 1.600 trang tiêu chuẩn đường sắt tốc độ cao tại thư mục con `TCVN_13594_DuongSatTocDoCao_1435mm`)* |
+| 7 | **TCVN 9394:2012** | ✅ **Đang có hiệu lực** | Đóng và ép cọc – Thi công và nghiệm thu *(Đang cập nhật bản scan toàn văn)* |
+| 8 | **TCVN 9395:2012** | ✅ **Đang có hiệu lực** | Cọc khoan nhồi – Thi công và nghiệm thu *(Đang cập nhật bản scan toàn văn)* |
+| 9 | **TCVN 10380:2014** | ✅ **Đang có hiệu lực** | Đường giao thông nông thôn – Yêu cầu thiết kế (cầu loại A, B, C; tải trọng H10, H13, 0.5-0.65 HL-93) *(Đang cập nhật bản scan toàn văn)* |
+| 10 | **TCVN 10940:2015** | ✅ **Đang có hiệu lực** | Cầu treo dân sinh – Yêu cầu thiết kế (cáp chủ, cáp treo, tháp cầu, mố neo) *(Đang cập nhật bản scan toàn văn)* |
+| 11 | **TCVN 8718:2011** | ✅ **Đang có hiệu lực** | Tiêu chuẩn thiết kế cầu đường sắt khổ 1000mm & 1435mm (tải trọng T-22, C-14, kiểm toán mỏi) *(Đang cập nhật bản scan toàn văn)* |
+| 12 | **TCVN 13575:2022** | ✅ **Đang có hiệu lực MỚI NHẤT** | Đường sắt đô thị – Thiết kế công trình và kết cấu hạ tầng (Cầu cạn Viaduct, dầm U, dầm hộp, tương tác ray TSI) *(Đang cập nhật bản scan toàn văn)* |
 
 > 📌 **Lưu ý chuyên môn về Cầu đường cao tốc:**  
 > Tại Việt Nam, **không có tiêu chuẩn riêng biệt độc lập tên là "TCVN Cầu cao tốc"**. Thay vào đó, thiết kế cầu trên đường bộ cao tốc tuân thủ hệ thống văn bản pháp quy kỹ thuật đồng bộ:  
