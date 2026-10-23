@@ -14,11 +14,26 @@
 plot.log
 hardcopy.log
 
-# File backup tu dong cua Revit / BIM (VD: TenFile.0001.rvt)
+# File backup tu dong cua Revit / BIM (Project, Family, Template)
 *.[0-9][0-9][0-9][0-9].rvt
 *.[0-9][0-9][0-9][0-9].rfa
 *.[0-9][0-9][0-9][0-9].rte
+*.[0-9][0-9][0-9][0-9].rft
+*.[0-9][0-9][0-9].rvt
+*.[0-9][0-9][0-9].rfa
+*.[0-9][0-9][0-9].rte
+*.00[0-9][0-9].rvt
+*.00[0-9][0-9].rfa
+*.00[0-9][0-9].rte
+
+# Thu muc backup va nhat ky lam viec Revit (Worksharing & Central backups)
 *_backup/
+*_backup/*
+*.slog
+*.rws
+*_ws.dat
+journal.*.txt
+audit*.txt
 
 # File ket qua / file tam dung luong lon cua Midas Civil / SAP2000 (chi luu file mo hinh goc .mcb, .mct, .sdb)
 *.ana
