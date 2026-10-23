@@ -34,7 +34,9 @@ F:\OneDrive\DTXM_GROUP\
 │   ├── 02_Mau_ThuyetMinh_BCNCKT_TKKT_BVTC/     # Mẫu Thuyết minh tổng hợp, Báo cáo KS theo từng bước TK
 │   ├── 03_BangTinh_Excel_KCAD_ThuyLuc_Cau/     # Bảng tính Áo đường mềm/cứng, Thủy văn-Thủy lực cống/cầu, Mố trụ
 │   ├── 04_ThuVien_CAD_KhungTen_DinhHinh/       # Khung tên, Nét in (.ctb), Bản vẽ định hình Cống/Rãnh/Hộ lan
-│   └── 05_Template_Civil3D_ADS_Midas/          # File mẫu (.dwt) Civil 3D, Mẫu mặt cắt ADS Road/VNRoad
+│   ├── 05_Template_Civil3D_ADS_Midas/          # File mẫu (.dwt) Civil 3D, Mẫu mặt cắt ADS Road/VNRoad
+│   ├── 06_Catalog_KetCauDinhHinh_VatTu/        # Catalog cọc ly tâm, cọc vít, dầm Super-T, cống hộp, rọ đá, neo
+│   └── 07_Template_Revit_BIM_Cau/              # Template Revit thiết kế cầu (.rvt), 72 Family cấu kiện & ký hiệu
 │
 ├── 04_HoSoNangLuc_NhanSu/                      # Hồ sơ năng lực Đấu thầu & Nhân sự
 │   ├── 01_NangLuc_CongTy_HopDongTuongTu/       # Hồ sơ pháp nhân, Hợp đồng tương tự, Biên bản bàn giao
