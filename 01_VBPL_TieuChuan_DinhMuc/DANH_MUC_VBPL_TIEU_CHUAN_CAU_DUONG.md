@@ -65,7 +65,7 @@
 | 7 | **TCVN 8718:2011** | ✅ **Đang có hiệu lực** | **Tiêu chuẩn thiết kế cầu đường sắt** (Khổ đường 1000mm và 1435mm; tải trọng đoàn tàu chuẩn T-22, C-14, lực hãm, lực giật ngang, kiểm toán mỏi và độ võng dầm thép/BTCT) |
 | 8 | **TCVN 13575:2022** | ✅ **Đang có hiệu lực MỚI NHẤT** | **Đường sắt đô thị – Yêu cầu kỹ thuật thiết kế công trình và kết cấu hạ tầng** (Trọng tâm Cầu cạn Viaduct, dầm U, dầm hộp đúc hẫng, ga trên cao, tương tác ray - nhịp TSI) |
 | 9 | **TCVN 5574:2018** | ✅ **Đang có hiệu lực** | Thiết kế kết cấu bê tông và bê tông cốt thép |
-| 10 | **TCVN 9386:2025** | ✅ **Đang có hiệu lực MỚI NHẤT** | **Thiết kế kết cấu chịu động đất** (Gồm TCVN 9386-1:2025 & TCVN 9386-5:2025 theo QĐ 4647/QĐ-BKHCN ngày 31/12/2025 thay thế TCVN 9386:2012; bản 2012 chuyển lưu tại `99_VanBan_Cu_ChuyenTiep`) |
+| 10 | **TCVN 9386:2012** *(Bộ tiêu chuẩn nền tảng toàn văn)* | ⚠️ **Đã có bản thay thế TCVN 9386:2025** | **Thiết kế công trình chịu động đất** (Lưu trữ bản toàn văn 3.5MB phục vụ tra cứu công thức, hệ số, phổ phản ứng). Bản thay thế **TCVN 9386:2025** (Phần 1 & Phần 5) đã được công bố theo QĐ 4647/QĐ-BKHCN ngày 31/12/2025 (hiện đang lưu hành ấn bản sách chuyên ngành từ IBST). |
 
 > 📌 **Lưu ý chuyên môn về Cầu đường cao tốc:**  
 > Tại Việt Nam, **không có tiêu chuẩn riêng biệt độc lập tên là "TCVN Cầu cao tốc"**. Thay vào đó, thiết kế cầu trên đường bộ cao tốc tuân thủ hệ thống văn bản pháp quy kỹ thuật đồng bộ:  
