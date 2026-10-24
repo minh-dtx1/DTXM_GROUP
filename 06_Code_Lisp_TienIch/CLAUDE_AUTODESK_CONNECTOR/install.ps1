@@ -139,7 +139,7 @@ Write-Host "[3/5] Quet cac ung dung Autodesk tren may..." -ForegroundColor Green
 $foundApps = @()
 
 # Kiem tra AutoCAD
-$acadVersions = @("2024", "2025", "2026", "2027")
+$acadVersions = @("2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027")
 foreach ($v in $acadVersions) {
     $path = "C:\Program Files\Autodesk\AutoCAD $v\acad.exe"
     if (Test-Path $path) {
@@ -165,6 +165,34 @@ if (Test-Path "C:\Program Files\Autodesk\InfraWorks\InfraWorks.exe") {
 
 # Kiem tra Revit & Revit MCP
 $revitMcpExe = $null
+
+# 1. Kiem tra goi Revit MCP san co trong Connector
+$bundleRevitMcp = Join-Path $ConnectorDir "revit_mcp\Autodesk.RevitMcpServer.Stdio.exe"
+$bundleRevitDll = Join-Path $ConnectorDir "revit_mcp\Autodesk.RevitMcpServer.Addin.dll"
+
+if (Test-Path $bundleRevitMcp) {
+    $revitMcpExe = $bundleRevitMcp
+    $foundApps += "Revit MCP Server (Goi portable di kem)"
+    Write-Host "  [+] Phat hien: Goi Revit MCP Server tich hop san trong Connector" -ForegroundColor Cyan
+
+    # Tu dong dang ky Add-in cho moi phien ban Revit tren may (2020 - 2027)
+    $revitYears = @("2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027")
+    foreach ($yr in $revitYears) {
+        $addinDir = "$env:APPDATA\Autodesk\Revit\Addins\$yr"
+        $revitInstalled = (Test-Path "C:\Program Files\Autodesk\Revit $yr") -or (Test-Path $addinDir)
+        if ($revitInstalled) {
+            if (-not (Test-Path $addinDir)) {
+                New-Item -ItemType Directory -Path $addinDir -Force | Out-Null
+            }
+            $addinFile = Join-Path $addinDir "Autodesk.RevitMcpServer.addin"
+            $addinXml = "<?xml version=""1.0"" encoding=""utf-8""?>`r`n<RevitAddIns>`r`n`t<AddIn Type=""Application"">`r`n`t`t<Name>Autodesk Revit Public MCP Server</Name>`r`n`t`t<Assembly>$bundleRevitDll</Assembly>`r`n`t`t<ClientId>92B7CFF4-4B9A-4F84-85EB-4024F8BA97F9</ClientId>`r`n`t`t<FullClassName>Autodesk.RevitMcpServer.Addin.Application</FullClassName>`r`n`t`t<VendorId>ADSK</VendorId>`r`n`t`t<VendorDescription>Autodesk, www.autodesk.com</VendorDescription>`r`n`t</AddIn>`r`n`t<ManifestSettings>`r`n`t`t<UseRevitContext>False</UseRevitContext>`r`n`t`t<ContextName>PublicMcpServer</ContextName>`r`n`t</ManifestSettings>`r`n</RevitAddIns>"
+            [System.IO.File]::WriteAllText($addinFile, $addinXml, [System.Text.UTF8Encoding]::new($false))
+            Write-Host "  -> Da tich hop Add-in tu dong vao Revit $yr" -ForegroundColor Gray
+        }
+    }
+}
+
+# 2. Kiem tra Revit MCP Server da cai san tren he thong (neu co)
 $revitMcpSearch = @(
     "C:\Program Files\Autodesk\Revit 2027 MCP Server Write-Tools Technical Preview\Autodesk.RevitMcpServer.Stdio.exe",
     "C:\Program Files\Autodesk\Revit MCP Server\Autodesk.RevitMcpServer.Stdio.exe"
@@ -172,8 +200,8 @@ $revitMcpSearch = @(
 foreach ($rm in $revitMcpSearch) {
     if (Test-Path $rm) {
         $revitMcpExe = $rm
-        $foundApps += "Revit Official MCP Server"
-        Write-Host "  [+] Phat hien: Revit MCP Server ($rm)" -ForegroundColor Cyan
+        $foundApps += "Revit Official System MCP Server"
+        Write-Host "  [+] Phat hien: Revit System MCP Server ($rm)" -ForegroundColor Cyan
         break
     }
 }
@@ -253,8 +281,9 @@ $desktopObj["mcpServers"]["autocad"] = @{
     }
 }
 
-# Neu co Revit MCP Server chinh thuc
+# Neu co Revit MCP Server chinh thuc hoac portable di kem
 if ($revitMcpExe) {
+    $desktopObj["mcpServers"]["revit"] = @{ "command" = $revitMcpExe }
     $desktopObj["mcpServers"]["revit-write"] = @{ "command" = $revitMcpExe }
     $desktopObj["mcpServers"]["revit-read"]  = @{ "command" = $revitMcpExe }
 }
@@ -282,6 +311,12 @@ if (Test-Path $ClaudeCliConfig) {
 $cliObj["mcpServers"]["civil3d-infraworks"] = $mcpAutocadCivil
 $cliObj["mcpServers"]["autocad"] = $mcpAutocadCivil
 if ($revitMcpExe) {
+    $cliObj["mcpServers"]["revit"] = @{
+        "type" = "stdio"
+        "command" = $revitMcpExe
+        "args" = @()
+        "env" = @{}
+    }
     $cliObj["mcpServers"]["revit-write"] = @{
         "type" = "stdio"
         "command" = $revitMcpExe

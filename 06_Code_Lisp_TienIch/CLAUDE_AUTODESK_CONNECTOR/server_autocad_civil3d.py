@@ -96,7 +96,7 @@ def _unwrap_com(obj: Any) -> Any:
 
 def _get_acad(launch_if_needed: bool = True, target_version: str | None = None) -> Any:
     """Initialize COM on the current thread and return the cached AutoCAD.Application proxy.
-    Supports AutoCAD 2026 (AutoCAD.Application.25), AutoCAD 2027 (AutoCAD.Application.26), and active instances.
+    Supports all AutoCAD versions: 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027.
     """
     global _ACAD_CACHE
     pythoncom.CoInitialize()
@@ -107,16 +107,21 @@ def _get_acad(launch_if_needed: bool = True, target_version: str | None = None) 
         except Exception:
             _ACAD_CACHE = None
 
-    prog_ids = []
-    if target_version == "2026":
-        prog_ids = ["AutoCAD.Application.25", "AutoCAD.Application"]
-    elif target_version == "2027":
-        prog_ids = ["AutoCAD.Application.26", "AutoCAD.Application"]
-    else:
-        # Check active instances: generic, AutoCAD 2026 (.25), AutoCAD 2027 (.26)
-        prog_ids = ["AutoCAD.Application", "AutoCAD.Application.25", "AutoCAD.Application.26"]
+    all_prog_ids = [
+        "AutoCAD.Application",        # Active / Default instance
+        "AutoCAD.Application.26",     # AutoCAD 2027
+        "AutoCAD.Application.25",     # AutoCAD 2026 / 2025
+        "AutoCAD.Application.24.4",   # AutoCAD 2025
+        "AutoCAD.Application.24.3",   # AutoCAD 2024
+        "AutoCAD.Application.24.2",   # AutoCAD 2023
+        "AutoCAD.Application.24.1",   # AutoCAD 2022
+        "AutoCAD.Application.24",     # AutoCAD 2021
+        "AutoCAD.Application.23.1",   # AutoCAD 2020
+        "AutoCAD.Application.23",     # AutoCAD 2019
+        "AutoCAD.Application.22",     # AutoCAD 2018
+    ]
 
-    for prog in prog_ids:
+    for prog in all_prog_ids:
         try:
             raw = win32com.client.GetActiveObject(prog)
             _ACAD_CACHE = _ComProxy(raw)
@@ -125,7 +130,7 @@ def _get_acad(launch_if_needed: bool = True, target_version: str | None = None) 
             continue
 
     if launch_if_needed:
-        for prog in prog_ids:
+        for prog in all_prog_ids:
             try:
                 raw = win32com.client.Dispatch(prog)
                 acad = _ComProxy(raw)
@@ -135,7 +140,7 @@ def _get_acad(launch_if_needed: bool = True, target_version: str | None = None) 
             except Exception:
                 continue
 
-    raise RuntimeError("AutoCAD (2026 or 2027) is not currently running or accessible via COM.")
+    raise RuntimeError("AutoCAD khong dang chay. Vui long mo AutoCAD truoc khi yeu cau Claude thao tac!")
 
 
 def _get_doc(doc_name: str | None = None) -> tuple[Any, Any]:
@@ -213,10 +218,20 @@ def get_autocad_status(target_version: str | None = None) -> dict[str, Any]:
         raw_version = str(getattr(acad, "Version", ""))
         caption = str(getattr(acad, "Caption", ""))
         friendly_version = "AutoCAD"
-        if raw_version.startswith("25.") or "2026" in caption:
-            friendly_version = "AutoCAD 2026"
-        elif raw_version.startswith("26.") or "2027" in caption:
+        if raw_version.startswith("26.") or "2027" in caption:
             friendly_version = "AutoCAD 2027"
+        elif raw_version.startswith("25.") or "2026" in caption:
+            friendly_version = "AutoCAD 2026"
+        elif raw_version.startswith("24.4") or "2025" in caption:
+            friendly_version = "AutoCAD 2025"
+        elif raw_version.startswith("24.3") or "2024" in caption:
+            friendly_version = "AutoCAD 2024"
+        elif raw_version.startswith("24.2") or "2023" in caption:
+            friendly_version = "AutoCAD 2023"
+        elif raw_version.startswith("24.1") or "2022" in caption:
+            friendly_version = "AutoCAD 2022"
+        elif raw_version.startswith("24.") or "2021" in caption:
+            friendly_version = "AutoCAD 2021"
         elif raw_version:
             friendly_version = f"AutoCAD (v{raw_version})"
 
