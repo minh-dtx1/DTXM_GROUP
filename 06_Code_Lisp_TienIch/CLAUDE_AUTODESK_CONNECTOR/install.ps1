@@ -1,19 +1,15 @@
 # ==============================================================================
-# BỘ CÀI ĐẶT TỰ ĐỘNG: KẾT NỐI CLAUDE AI VỚI AUTODESK (REVIT, CIVIL 3D, CAD, INFRAWORKS)
-# Tương thích: Windows 10, Windows 11 (64-bit)
-# Phiên bản phần mềm hỗ trợ:
-# - Autodesk AutoCAD 2024, 2025, 2026, 2027
-# - Autodesk Civil 3D 2024, 2025, 2026, 2027
-# - Autodesk InfraWorks 2024, 2025, 2026, 2027
-# - Autodesk Revit 2024, 2025, 2026, 2027 (MCP Stdio & pyRevit)
+# BO CAI DAT TU DONG: KET NOI CLAUDE AI VOI AUTODESK (REVIT, CIVIL 3D, CAD, INFRAWORKS)
+# Tuong thich: Windows 10, Windows 11 (64-bit)
+# Ho tro: AutoCAD (2024-2027), Civil 3D (2024-2027), InfraWorks, Revit
 # ==============================================================================
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-$Host.UI.RawUI.WindowTitle = "Bộ Cài Đặt Kết Nối Claude - Autodesk BIM/CAD"
+$Host.UI.RawUI.WindowTitle = "Bo Cai Dat Ket Noi Claude - Autodesk BIM/CAD"
 
 Write-Host ""
 Write-Host "=======================================================================" -ForegroundColor Cyan
-Write-Host "   BỘ CÀI ĐẶT KẾT NỐI CLAUDE AI VỚI AUTODESK (BIM & CIVIL CAD)         " -ForegroundColor Yellow
+Write-Host "   BO CAI DAT KET NOI CLAUDE AI VOI AUTODESK (BIM & CIVIL CAD)         " -ForegroundColor Yellow
 Write-Host "   Revit | Civil 3D | AutoCAD | InfraWorks -> Claude Desktop & CLI    " -ForegroundColor Cyan
 Write-Host "=======================================================================" -ForegroundColor Cyan
 Write-Host ""
@@ -24,37 +20,37 @@ if (-not $ConnectorDir) {
 }
 
 # ------------------------------------------------------------------------------
-# BƯỚC 1: TÌM HOẶC CÀI ĐẶT PYTHON TRÊN MÁY TÍNH
+# BUOC 1: KIEM TRA HOAC CAI DAT PYTHON TREN MAY TINH
 # ------------------------------------------------------------------------------
-Write-Host "[1/5] Kiểm tra môi trường Python trên máy tính..." -ForegroundColor Green
+Write-Host "[1/5] Kiem tra moi truong Python tren may tinh..." -ForegroundColor Green
 
 $pythonExe = $null
 
-# 1. Kiểm tra python trong PATH
+# 1. Kiem tra python launcher py -3.12 hoac py -3.11
 try {
-    $pyCmd = Get-Command python -ErrorAction SilentlyContinue
-    if ($pyCmd) {
-        $pyVer = & python -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')" 2>$null
-        if ($pyVer -ge "3.10") {
-            $pythonExe = (Get-Command python).Source
-            Write-Host "  -> Đã tìm thấy Python $pyVer trong PATH: $pythonExe" -ForegroundColor Gray
-        }
+    $pyFromLauncher = & py -3.12 -c "import sys; print(sys.executable)" 2>$null
+    if ($pyFromLauncher -and (Test-Path $pyFromLauncher)) {
+        $pythonExe = $pyFromLauncher
+        Write-Host "  -> Da tim thay Python 3.12 qua py launcher: $pythonExe" -ForegroundColor Gray
     }
 } catch {}
 
-# 2. Kiểm tra uv nếu có
+# 2. Kiem tra uv neu co
 if (-not $pythonExe) {
     $uvPath = "$env:USERPROFILE\.local\bin\uv.exe"
     if (Test-Path $uvPath) {
-        $pyFromUv = & $uvPath python find 2>$null
+        $pyFromUv = & $uvPath python find 3.12 2>$null
+        if (-not $pyFromUv) {
+            $pyFromUv = & $uvPath python find 2>$null
+        }
         if ($pyFromUv -and (Test-Path $pyFromUv)) {
             $pythonExe = $pyFromUv
-            Write-Host "  -> Đã tìm thấy Python thông qua uv: $pythonExe" -ForegroundColor Gray
+            Write-Host "  -> Da tim thay Python thong qua uv: $pythonExe" -ForegroundColor Gray
         }
     }
 }
 
-# 3. Quét các thư mục cài đặt tiêu chuẩn của Python trên Windows
+# 3. Quet cac thu muc cai dat tieu chuan CPython 3.12 / 3.11 / 3.10
 if (-not $pythonExe) {
     $commonPyPaths = @(
         "$env:LOCALAPPDATA\Programs\Python\Python312\python.exe",
@@ -64,32 +60,53 @@ if (-not $pythonExe) {
         "C:\Program Files\Python311\python.exe",
         "C:\Program Files\Python310\python.exe"
     )
+    $uvPyDir = "$env:APPDATA\uv\python"
+    if (Test-Path $uvPyDir) {
+        $foundUvPy = Get-ChildItem -Path $uvPyDir -Filter "python.exe" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1
+        if ($foundUvPy) {
+            $commonPyPaths += $foundUvPy.FullName
+        }
+    }
     foreach ($p in $commonPyPaths) {
         if (Test-Path $p) {
             $pythonExe = $p
-            Write-Host "  -> Đã tìm thấy Python tại: $pythonExe" -ForegroundColor Gray
+            Write-Host "  -> Da tim thay Python tai: $pythonExe" -ForegroundColor Gray
             break
         }
     }
 }
 
-# 4. Tự động cài đặt Python nếu máy hoàn toàn chưa có
+# 4. Kiem tra python trong PATH (chi chap nhan phien ban 3.10 den 3.13)
 if (-not $pythonExe) {
-    Write-Host "  [!] Máy tính chưa cài Python 3.10+. Đang tiến hành cài đặt tự động qua winget..." -ForegroundColor Yellow
+    try {
+        $pyCmd = Get-Command python -ErrorAction SilentlyContinue
+        if ($pyCmd) {
+            $pyVer = & python -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')" 2>$null
+            if ($pyVer -ge "3.10" -and $pyVer -le "3.13") {
+                $pythonExe = (Get-Command python).Source
+                Write-Host "  -> Da tim thay Python $pyVer trong PATH: $pythonExe" -ForegroundColor Gray
+            }
+        }
+    } catch {}
+}
+
+# 5. Tu dong cai dat Python neu may hoan toan chua co
+if (-not $pythonExe) {
+    Write-Host "  [!] May tinh chua cai Python 3.10 - 3.13. Dang tien hanh cai dat tu dong Python 3.12 qua winget..." -ForegroundColor Yellow
     try {
         winget install --id Python.Python.3.12 --exact --source winget --accept-source-agreements --accept-package-agreements --silent
         Start-Sleep -Seconds 5
         $pythonExe = "$env:LOCALAPPDATA\Programs\Python\Python312\python.exe"
     } catch {
-        Write-Host "  [LỖI] Không thể tự cài Python qua winget. Vui lòng cài Python 3.10+ từ https://www.python.org/downloads/ rồi chạy lại." -ForegroundColor Red
+        Write-Host "  [LOI] Khong the tu cai Python qua winget. Vui long cai Python 3.12 tu https://www.python.org/downloads/ roi chay lai." -ForegroundColor Red
         Exit 1
     }
 }
 
 # ------------------------------------------------------------------------------
-# BƯỚC 2: TẠO VÀ THIẾT LẬP MÔI TRƯỜNG ẢO CHO CONNECTOR
+# BUOC 2: TAO VA THIET LAP MOI TRUONG AO CHO CONNECTOR
 # ------------------------------------------------------------------------------
-Write-Host "[2/5] Thiết lập môi trường ảo và gói thư viện COM..." -ForegroundColor Green
+Write-Host "[2/5] Thiet lap moi truong ao va goi thu vien COM..." -ForegroundColor Green
 
 $VenvDir = Join-Path $ConnectorDir "venv"
 $VenvPy = Join-Path $VenvDir "Scripts\python.exe"
@@ -97,21 +114,14 @@ $VenvPip = Join-Path $VenvDir "Scripts\pip.exe"
 $ReqFile = Join-Path $ConnectorDir "requirements.txt"
 
 if (-not (Test-Path $VenvPy)) {
-    Write-Host "  -> Đang khởi tạo venv tại: $VenvDir" -ForegroundColor Gray
+    Write-Host "  -> Dang khoi tao venv tai: $VenvDir" -ForegroundColor Gray
     & $pythonExe -m venv $VenvDir
 }
 
-Write-Host "  -> Đang cài đặt/cập nhật thư viện: mcp, pywin32, ezdxf..." -ForegroundColor Gray
-if (Test-Path $VenvPip) {
-    & $VenvPip install --upgrade pip --quiet
-    & $VenvPip install -r $ReqFile --quiet
-} else {
-    # Nếu venv không có pip, nạp ensurepip
-    & $VenvPy -m ensurepip --default-pip
-    & $VenvPy -m pip install -r $ReqFile --quiet
-}
+Write-Host "  -> Dang cai dat/cap nhat thu vien: mcp, pywin32, ezdxf..." -ForegroundColor Gray
+& $VenvPy -m pip install -r $ReqFile --quiet
 
-# Đăng ký COM DLLs cho pywin32 nếu cần
+# Dang ky COM DLLs cho pywin32 neu can
 try {
     $postInstall = Join-Path $VenvDir "Scripts\pywin32_postinstall.py"
     if (Test-Path $postInstall) {
@@ -119,41 +129,41 @@ try {
     }
 } catch {}
 
-Write-Host "  -> Cài đặt thư viện Python hoàn tất!" -ForegroundColor Green
+Write-Host "  -> Cai dat thu vien Python hoan tat!" -ForegroundColor Green
 
 # ------------------------------------------------------------------------------
-# BƯỚC 3: QUÉT VÀ KIỂM TRA PHẦN MỀM AUTODESK CÓ SẴN
+# BUOC 3: QUET VA KIEM TRA PHAN MEM AUTODESK CO SAN
 # ------------------------------------------------------------------------------
-Write-Host "[3/5] Quét các ứng dụng Autodesk trên máy..." -ForegroundColor Green
+Write-Host "[3/5] Quet cac ung dung Autodesk tren may..." -ForegroundColor Green
 
 $foundApps = @()
 
-# Kiểm tra AutoCAD
+# Kiem tra AutoCAD
 $acadVersions = @("2024", "2025", "2026", "2027")
 foreach ($v in $acadVersions) {
     $path = "C:\Program Files\Autodesk\AutoCAD $v\acad.exe"
     if (Test-Path $path) {
         $foundApps += "AutoCAD $v"
-        Write-Host "  [+] Phát hiện: AutoCAD $v ($path)" -ForegroundColor Cyan
+        Write-Host "  [+] Phat hien: AutoCAD $v ($path)" -ForegroundColor Cyan
     }
 }
 
-# Kiểm tra Civil 3D
+# Kiem tra Civil 3D
 foreach ($v in $acadVersions) {
     $c3dPath = "C:\Program Files\Autodesk\AutoCAD $v\C3D"
     if (Test-Path $c3dPath) {
         $foundApps += "Civil 3D $v"
-        Write-Host "  [+] Phát hiện: Civil 3D $v" -ForegroundColor Cyan
+        Write-Host "  [+] Phat hien: Civil 3D $v" -ForegroundColor Cyan
     }
 }
 
-# Kiểm tra InfraWorks
+# Kiem tra InfraWorks
 if (Test-Path "C:\Program Files\Autodesk\InfraWorks\InfraWorks.exe") {
     $foundApps += "InfraWorks"
-    Write-Host "  [+] Phát hiện: Autodesk InfraWorks" -ForegroundColor Cyan
+    Write-Host "  [+] Phat hien: Autodesk InfraWorks" -ForegroundColor Cyan
 }
 
-# Kiểm tra Revit & Revit MCP
+# Kiem tra Revit & Revit MCP
 $revitMcpExe = $null
 $revitMcpSearch = @(
     "C:\Program Files\Autodesk\Revit 2027 MCP Server Write-Tools Technical Preview\Autodesk.RevitMcpServer.Stdio.exe",
@@ -163,31 +173,31 @@ foreach ($rm in $revitMcpSearch) {
     if (Test-Path $rm) {
         $revitMcpExe = $rm
         $foundApps += "Revit Official MCP Server"
-        Write-Host "  [+] Phát hiện: Revit MCP Server ($rm)" -ForegroundColor Cyan
+        Write-Host "  [+] Phat hien: Revit MCP Server ($rm)" -ForegroundColor Cyan
         break
     }
 }
 
-# Kiểm tra pyRevit
+# Kiem tra pyRevit
 $pyrevitMain = "$env:APPDATA\pyRevit\Extensions\mcp-server-for-revit-python.extension\main.py"
 $hasPyRevit = Test-Path $pyrevitMain
 if ($hasPyRevit) {
     $foundApps += "pyRevit MCP Extension"
-    Write-Host "  [+] Phát hiện: pyRevit MCP Extension ($pyrevitMain)" -ForegroundColor Cyan
+    Write-Host "  [+] Phat hien: pyRevit MCP Extension ($pyrevitMain)" -ForegroundColor Cyan
 }
 
 if ($foundApps.Count -eq 0) {
-    Write-Host "  [!] Chưa tìm thấy cài đặt Autodesk ở thư mục mặc định (sẽ sử dụng kết nối COM động khi bạn bật phần mềm)." -ForegroundColor Yellow
+    Write-Host "  [!] Chua tim thay cai dat Autodesk o thu muc mac dinh (se su dung ket noi COM dong khi ban bat phan mem)." -ForegroundColor Yellow
 }
 
 # ------------------------------------------------------------------------------
-# BƯỚC 4: TỰ ĐỘNG CẤU HÌNH CLAUDE DESKTOP & CLAUDE CODE CLI
+# BUOC 4: TU DONG CAU HINH CLAUDE DESKTOP & CLAUDE CODE CLI
 # ------------------------------------------------------------------------------
-Write-Host "[4/5] Tích hợp cấu hình vào Claude Desktop và Claude Code CLI..." -ForegroundColor Green
+Write-Host "[4/5] Tich hop cau hinh vao Claude Desktop va Claude Code CLI..." -ForegroundColor Green
 
 $ServerScript = Join-Path $ConnectorDir "server_autocad_civil3d.py"
 
-# Cấu trúc MCP Server cho CAD / Civil 3D / InfraWorks
+# Cau truc MCP Server cho CAD / Civil 3D / InfraWorks
 $mcpAutocadCivil = @{
     "type" = "stdio"
     "command" = $VenvPy
@@ -199,7 +209,7 @@ $mcpAutocadCivil = @{
     }
 }
 
-# 1. Cấu hình Claude Desktop (claude_desktop_config.json)
+# 1. Cau hinh Claude Desktop (claude_desktop_config.json)
 $ClaudeDesktopDir = "$env:APPDATA\Claude"
 $ClaudeDesktopConfig = Join-Path $ClaudeDesktopDir "claude_desktop_config.json"
 
@@ -218,11 +228,11 @@ if (Test-Path $ClaudeDesktopConfig) {
             }
         }
     } catch {
-        Write-Host "  [!] Đang tạo lại file config Claude Desktop mới..." -ForegroundColor Yellow
+        Write-Host "  [!] Dang tao lai file config Claude Desktop moi..." -ForegroundColor Yellow
     }
 }
 
-# Ghi đè / bổ sung mcpServers
+# Ghi de / bo sung mcpServers
 $desktopObj["mcpServers"]["civil3d-infraworks"] = @{
     "command" = $VenvPy
     "args" = @("-u", $ServerScript)
@@ -243,18 +253,18 @@ $desktopObj["mcpServers"]["autocad"] = @{
     }
 }
 
-# Nếu có Revit MCP Server chính thức
+# Neu co Revit MCP Server chinh thuc
 if ($revitMcpExe) {
     $desktopObj["mcpServers"]["revit-write"] = @{ "command" = $revitMcpExe }
     $desktopObj["mcpServers"]["revit-read"]  = @{ "command" = $revitMcpExe }
 }
 
-# Lưu Claude Desktop config UTF-8 không BOM
+# Luu Claude Desktop config UTF-8 khong BOM
 $desktopJson = $desktopObj | ConvertTo-Json -Depth 10
 [System.IO.File]::WriteAllText($ClaudeDesktopConfig, $desktopJson, [System.Text.UTF8Encoding]::new($false))
-Write-Host "  -> Đã cập nhật thành công: $ClaudeDesktopConfig" -ForegroundColor Green
+Write-Host "  -> Da cap nhat thanh cong: $ClaudeDesktopConfig" -ForegroundColor Green
 
-# 2. Cấu hình Claude Code CLI (.claude.json)
+# 2. Cau hinh Claude Code CLI (.claude.json)
 $ClaudeCliConfig = "$env:USERPROFILE\.claude.json"
 $cliObj = @{ "mcpServers" = @{} }
 if (Test-Path $ClaudeCliConfig) {
@@ -282,34 +292,34 @@ if ($revitMcpExe) {
 
 $cliJson = $cliObj | ConvertTo-Json -Depth 10
 [System.IO.File]::WriteAllText($ClaudeCliConfig, $cliJson, [System.Text.UTF8Encoding]::new($false))
-Write-Host "  -> Đã cập nhật thành công: $ClaudeCliConfig" -ForegroundColor Green
+Write-Host "  -> Da cap nhat thanh cong: $ClaudeCliConfig" -ForegroundColor Green
 
 # ------------------------------------------------------------------------------
-# BƯỚC 5: KIỂM TRA SỨC KHỎE KẾT NỐI (HEALTH-CHECK)
+# BUOC 5: KIEM TRA SUC KHOE KET NOI (HEALTH-CHECK)
 # ------------------------------------------------------------------------------
-Write-Host "[5/5] Kiểm tra trực tiếp khả năng giao tiếp của Server..." -ForegroundColor Green
+Write-Host "[5/5] Kiem tra truc tiep kha nang giao tiep cua Server..." -ForegroundColor Green
 
 try {
     & $VenvPy $ServerScript --test
 } catch {
-    Write-Host "  [!] Lưu ý: Khởi động AutoCAD / Civil 3D để trải nghiệm đầy đủ tính năng tương tác." -ForegroundColor Yellow
+    Write-Host "  [!] Luu y: Khoi dong AutoCAD / Civil 3D de trai nghiem day du tinh nang." -ForegroundColor Yellow
 }
 
 Write-Host ""
 Write-Host "=======================================================================" -ForegroundColor Green
-Write-Host "               CÀI ĐẶT HOÀN TẤT THÀNH CÔNG 100%!                       " -ForegroundColor Green
+Write-Host "               CAI DAT HOAN TAT THANH CONG 100%!                       " -ForegroundColor Green
 Write-Host "=======================================================================" -ForegroundColor Green
-Write-Host "Danh sách phần mềm đã liên kết với Claude:" -ForegroundColor Yellow
-Write-Host "  1. Autodesk AutoCAD (2024, 2025, 2026, 2027) -> Đã kích hoạt 21 tools" -ForegroundColor White
-Write-Host "  2. Autodesk Civil 3D (Bề mặt TIN, Tim tuyến, Trắc dọc) -> Đã kích hoạt" -ForegroundColor White
-Write-Host "  3. Autodesk InfraWorks (IMX, Mô hình 3D Solid)       -> Đã kích hoạt" -ForegroundColor White
+Write-Host "Danh sach phan mem da lien ket voi Claude:" -ForegroundColor Yellow
+Write-Host "  1. Autodesk AutoCAD (2024, 2025, 2026, 2027) -> Da kich hoat 21 tools" -ForegroundColor White
+Write-Host "  2. Autodesk Civil 3D (Be mat TIN, Tim tuyen, Trac doc) -> Da kich hoat" -ForegroundColor White
+Write-Host "  3. Autodesk InfraWorks (IMX, Mo hinh 3D Solid)       -> Da kich hoat" -ForegroundColor White
 if ($revitMcpExe -or $hasPyRevit) {
-Write-Host "  4. Autodesk Revit (Mô hình BIM, Family, View)        -> Đã kích hoạt" -ForegroundColor White
+Write-Host "  4. Autodesk Revit (Mo hinh BIM, Family, View)        -> Da kich hoat" -ForegroundColor White
 }
 Write-Host ""
-Write-Host "LƯU Ý ĐỂ BẮT ĐẦU SỬ DỤNG:" -ForegroundColor Cyan
-Write-Host "  - Khởi động lại Claude Desktop (Nhấp chuột phải icon Claude ở khay đồng hồ -> Quit Claude)" -ForegroundColor Gray
-Write-Host "  - Mở một Phiên Chat Mới (New Chat / Ctrl+N) để Claude tự động nhận diện bộ công cụ." -ForegroundColor Gray
-Write-Host "  - Chỉ cần mở bản vẽ AutoCAD/Civil 3D rồi yêu cầu Claude thực hiện lệnh!" -ForegroundColor Gray
+Write-Host "LUU Y DE BAT DAU SU DUNG:" -ForegroundColor Cyan
+Write-Host "  - Khoi dong lai Claude Desktop: Nhap chuot phai icon Claude o khay he thong -> Quit Claude" -ForegroundColor Gray
+Write-Host "  - Mo mot Phien Chat Moi (New Chat / Ctrl+N) de Claude tu dong nhan dien bo cong cu." -ForegroundColor Gray
+Write-Host "  - Chi can mo ban ve AutoCAD/Civil 3D roi yeu cau Claude thuc hien lenh!" -ForegroundColor Gray
 Write-Host "=======================================================================" -ForegroundColor Green
 Write-Host ""

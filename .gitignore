@@ -57,3 +57,8 @@ __pycache__/
 # Chi luu thu muc mau khung 00_MAU_DU_AN_CAU_DUONG, bo qua cac thu muc du an thuc te phat sinh
 05_DuAn_CauDuong/*
 !05_DuAn_CauDuong/00_MAU_DU_AN_CAU_DUONG/
+
+# Thu vien Catalogue va file nen dung luong lon vuot nguong 100MB cua GitHub
+03_ThuVien_BieuMau_Chuan/06_Catalog_KetCauDinhHinh_VatTu/03. CATALOGUE VSL&FREYSSINET/
+*.rar
+*.7z

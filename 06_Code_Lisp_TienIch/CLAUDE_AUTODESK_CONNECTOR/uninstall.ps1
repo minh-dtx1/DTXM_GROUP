@@ -1,11 +1,11 @@
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-$Host.UI.RawUI.WindowTitle = "Gỡ Bỏ Kết Nối Claude - Autodesk"
+$Host.UI.RawUI.WindowTitle = "Go Bo Ket Noi Claude - Autodesk"
 
 Write-Host "=======================================================================" -ForegroundColor Yellow
-Write-Host "             GỠ BỎ KẾT NỐI CLAUDE AI VỚI AUTODESK                      " -ForegroundColor Red
+Write-Host "             GO BO KET NOI CLAUDE AI VOI AUTODESK                      " -ForegroundColor Red
 Write-Host "=======================================================================" -ForegroundColor Yellow
 
-# Gỡ khỏi Claude Desktop
+# Go khoi Claude Desktop
 $ClaudeDesktopConfig = "$env:APPDATA\Claude\claude_desktop_config.json"
 if (Test-Path $ClaudeDesktopConfig) {
     try {
@@ -15,12 +15,12 @@ if (Test-Path $ClaudeDesktopConfig) {
             $desktopObj["mcpServers"].Remove("autocad")
             $desktopJson = $desktopObj | ConvertTo-Json -Depth 10
             [System.IO.File]::WriteAllText($ClaudeDesktopConfig, $desktopJson, [System.Text.UTF8Encoding]::new($false))
-            Write-Host "  -> Đã gỡ bỏ cấu hình khỏi Claude Desktop." -ForegroundColor Green
+            Write-Host "  -> Da go bo cau hinh khoi Claude Desktop." -ForegroundColor Green
         }
     } catch {}
 }
 
-# Gỡ khỏi Claude Code CLI
+# Go khoi Claude Code CLI
 $ClaudeCliConfig = "$env:USERPROFILE\.claude.json"
 if (Test-Path $ClaudeCliConfig) {
     try {
@@ -30,10 +30,10 @@ if (Test-Path $ClaudeCliConfig) {
             $cliObj["mcpServers"].Remove("autocad")
             $cliJson = $cliObj | ConvertTo-Json -Depth 10
             [System.IO.File]::WriteAllText($ClaudeCliConfig, $cliJson, [System.Text.UTF8Encoding]::new($false))
-            Write-Host "  -> Đã gỡ bỏ cấu hình khỏi Claude Code CLI." -ForegroundColor Green
+            Write-Host "  -> Da go bo cau hinh khoi Claude Code CLI." -ForegroundColor Green
         }
     } catch {}
 }
 
 Write-Host ""
-Write-Host "Đã hoàn tất gỡ bỏ kết nối!" -ForegroundColor Green
+Write-Host "Da hoan tat go bo ket noi!" -ForegroundColor Green
