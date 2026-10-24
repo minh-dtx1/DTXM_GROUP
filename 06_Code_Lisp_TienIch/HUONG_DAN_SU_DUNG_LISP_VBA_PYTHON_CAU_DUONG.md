@@ -50,3 +50,11 @@
 1. **[01_KhoiTao_CauTruc_DuAn_Moi.py](file:///F:/OneDrive/DTXM_GROUP/06_Code_Lisp_TienIch/03_Python_Scripts_TuDongHoa/01_KhoiTao_CauTruc_DuAn_Moi.py)** — Tự động tạo toàn bộ 21 thư mục con chuẩn (Pháp lý, Khảo sát, Thiết kế Đường, Thiết kế Cầu, BIM, Dự toán, Phát hành PDF) cho một dự án mới trong `05_DuAn_CauDuong`.
 2. **[02_Gop_Va_ThongKe_SoTrang_PDF_HoSo.py](file:///F:/OneDrive/DTXM_GROUP/06_Code_Lisp_TienIch/03_Python_Scripts_TuDongHoa/02_Gop_Va_ThongKe_SoTrang_PDF_HoSo.py)** — Quét thư mục hồ sơ PDF bàn giao để tự động đếm số trang của từng bản vẽ/thuyết minh và lập bảng kê mục lục số trang in ấn.
 3. **[03_TraCuu_MaDinhMuc_CauDuong_TT38_2026.py](file:///F:/OneDrive/DTXM_GROUP/06_Code_Lisp_TienIch/03_Python_Scripts_TuDongHoa/03_TraCuu_MaDinhMuc_CauDuong_TT38_2026.py)** — Công cụ dòng lệnh tra cứu nhanh mã hiệu định mức dự toán chuyên ngành Cầu đường (Đào đắp, CPĐD, BTN, Cọc khoan nhồi, Cọc PHC, Dầm Super-T/Dầm I, Cống, Rọ đá, ATGT) theo Thông tư 38/2026/TT-BXD.
+
+---
+
+## IV. BỘ KẾT NỐI CLAUDE AI VỚI AUTODESK BIM/CAD (`CLAUDE_AUTODESK_CONNECTOR`)
+* **Thư mục:** [`CLAUDE_AUTODESK_CONNECTOR`](file:///F:/OneDrive/DTXM_GROUP/06_Code_Lisp_TienIch/CLAUDE_AUTODESK_CONNECTOR/)
+* **File nén cài đặt nhanh:** [`CLAUDE_AUTODESK_CONNECTOR.zip`](file:///F:/OneDrive/DTXM_GROUP/06_Code_Lisp_TienIch/CLAUDE_AUTODESK_CONNECTOR.zip)
+* **Tính năng:** Tự động kết nối Claude AI (Claude Desktop & Claude Code CLI) với **Revit**, **Civil 3D**, **AutoCAD**, **InfraWorks** (2024–2027) trên bất kỳ máy tính nào qua 1-click `install.bat`.
+* **Hướng dẫn chi tiết:** Xem file [`HUONG_DAN_SU_DUNG.md`](file:///F:/OneDrive/DTXM_GROUP/06_Code_Lisp_TienIch/CLAUDE_AUTODESK_CONNECTOR/HUONG_DAN_SU_DUNG.md).
