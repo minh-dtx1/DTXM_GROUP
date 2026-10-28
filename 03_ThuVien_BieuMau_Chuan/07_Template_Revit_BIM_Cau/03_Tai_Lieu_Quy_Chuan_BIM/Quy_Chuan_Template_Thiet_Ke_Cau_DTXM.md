@@ -1,4 +1,4 @@
-# BỘ QUY CHUẨN TEMPLATE THIẾT KẾ CẦU (DTXM BRIDGE BIM STANDARD)
+﻿# BỘ QUY CHUẨN TEMPLATE THIẾT KẾ CẦU (DTXM BRIDGE BIM STANDARD)
 > **Trích xuất và chuẩn hóa từ dự án chuẩn:** `F:\tru.rvt` (Dự án Cầu Vành Đai 3 - Hệ quy chuẩn DTXM Bridge BIM)  
 > **Tiêu chuẩn thiết kế áp dụng:** TCVN 11823:2017 / AASHTO LRFD Bridge Design Specifications  
 > **Khổ bản vẽ chuẩn:** **Khổ A3** (`DTXM_Khung ten A3`)  
@@ -47,16 +47,16 @@ Bộ tham số quản lý chia thành 2 nhóm chính: **Quản lý hồ sơ bả
 
 ### 2.2. Tham số Bóc tách Cốt thép Tự động (DTXM Rebar Engine):
 Gắn trực tiếp vào Category `Structural Rebar`:
-* **`iDECO_Number`**: Số hiệu thanh cốt thép (1, 2, 3...).
-* **`iDECO_LengthGroup`**: Phân nhóm chiều dài tiêu chuẩn (đoạn nối $\le 11.7\text{ m}$).
-* **`iDECO_ShapeImage`**: Ảnh dạng uốn thanh thép nhúng tự động vào bảng thống kê.
-* **`iDECO_NumberJoint`**: Số lượng mối nối trên thanh thép.
-* **`iDECO_Lapsplice`**: Chiều dài đoạn nối chồng cốt thép ($35d - 40d$).
-* **`iDECO_TotalLength`**: Tổng chiều dài của thanh thép (đã cộng đoạn uốn móc).
-* **`iDECO_TotalWeight`**: Tổng trọng lượng thanh thép (tính theo đường kính và khối lượng riêng).
-* **`iDECO_A`, `iDECO_B`, `iDECO_C`, `iDECO_D`, `iDECO_E`, `iDECO_F`, `iDECO_G`**: Kích thước từng phân đoạn uốn của thanh thép.
-* **`iDECO_Angles`, `iDECO_Alpha1`, `iDECO_Alpha2`**: Góc uốn của thanh thép.
-* **`iDECO_Density`**: Khối lượng riêng của cốt thép ($7850\text{ kg/m}^3$).
+* **`DTXM_Number`**: Số hiệu thanh cốt thép (1, 2, 3...).
+* **`DTXM_LengthGroup`**: Phân nhóm chiều dài tiêu chuẩn (đoạn nối $\le 11.7\text{ m}$).
+* **`DTXM_ShapeImage`**: Ảnh dạng uốn thanh thép nhúng tự động vào bảng thống kê.
+* **`DTXM_NumberJoint`**: Số lượng mối nối trên thanh thép.
+* **`DTXM_Lapsplice`**: Chiều dài đoạn nối chồng cốt thép ($35d - 40d$).
+* **`DTXM_TotalLength`**: Tổng chiều dài của thanh thép (đã cộng đoạn uốn móc).
+* **`DTXM_TotalWeight`**: Tổng trọng lượng thanh thép (tính theo đường kính và khối lượng riêng).
+* **`DTXM_A`, `DTXM_B`, `DTXM_C`, `DTXM_D`, `DTXM_E`, `DTXM_F`, `DTXM_G`**: Kích thước từng phân đoạn uốn của thanh thép.
+* **`DTXM_Angles`, `DTXM_Alpha1`, `DTXM_Alpha2`**: Góc uốn của thanh thép.
+* **`DTXM_Density`**: Khối lượng riêng của cốt thép ($7850\text{ kg/m}^3$).
 
 ---
 
